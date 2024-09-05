@@ -1,6 +1,6 @@
 site_name: SITE NAME
 repo_url: https://github.com/acceleratescience/REPO-TITLE
-site_url: https://docs.science.ai.cam.ac.uk
+site_url: https://acceleratescience.github.io/workshops
 nav:
   - Home: 
     - Welcome!: index.md
