@@ -32,7 +32,7 @@
   <h3 align="center">Accelerate Workshops</h3>
 
   <p align="center">
-    REPO DESCRIPTION
+    Welcome to the Accelerate Science Workshops
     <br />
     <a href="https://acceleratescience.github.io/packaging-publishing/"><strong>Start the Course »</strong></a>
     <br />
