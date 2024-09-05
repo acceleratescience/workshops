@@ -1,51 +1,164 @@
-# Academic Pages
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<a name="readme-top"></a>
 
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
+<!-- PROJECT SHIELDS -->
+<!-- [![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![GPL License][license-shield]][license-url] -->
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![Issues](https://img.shields.io/github/issues-raw/acceleratescience/<REPO-TITLE>.svg?maxAge=25000)](https://github.com/acceleratescience/<REPO-TITLE>/issues)
+[![GitHub contributors](https://img.shields.io/github/contributors/acceleratescience/<REPO-TITLE>.svg?style=flat)]()
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/acceleratescience/<REPO-TITLE>.svg?style=flat)]()
+[![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
+<br>
+[![GitHub stars](https://img.shields.io/github/stars/acceleratescience/<REPO-TITLE>.svg?style=social&label=Star)]()
+[![GitHub watchers](https://img.shields.io/github/watchers/acceleratescience/<REPO-TITLE>.svg?style=social&label=Watch)]()
+[![GitHub forks](https://img.shields.io/github/forks/acceleratescience/<REPO-TITLE>.svg?style=social&label=Fork)](https://github.com/JonSnow/MyBadges)
+[![GitHub followers](https://img.shields.io/github/followers/acceleratescience.svg?style=social&label=Follow)](https://github.com/JonSnow/MyBadges)
+[![Twitter Follow](https://img.shields.io/twitter/follow/AccelerateSci.svg?style=social)](https://twitter.com/AccelerateSci)
+<!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
 
-Academic Pages is a Github Pages template for academic websites.
 
-# Getting Started
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://acceleratescience.github.io/">
+    <img src="./docs/imgs/full_acc.png" alt="Logo" height=80>
+  </a>
 
-See more info at https://academicpages.github.io/
+  <h3 align="center">REPO TITLE</h3>
 
-## Running Locally
+  <p align="center">
+    REPO DESCRIPTION
+    <br />
+    <a href="https://acceleratescience.github.io/packaging-publishing/"><strong>Start the Course »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/acceleratescience/packaging-publishing/tree/basic">Get Basic Code</a>
+    ·
+    <a href="https://github.com/acceleratescience/packaging-publishing/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/acceleratescience/packaging-publishing/issues">Request Feature</a>
+  </p>
+</div>
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#howrun">How to Run</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+  </ol>
+</details>
 
-# Maintenance
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+<!---------------------------------------------------------------------------->
 
-## Bugfixes and enhancements
+[Button Shield]: https://img.shields.io/badge/Shield_Buttons-37a779?style=for-the-badge
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+[License]: LICENSE
+[Shield]: Types/Shield.md
+[#]: #
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+
+<!---------------------------------[ Badges ]---------------------------------->
+
+[Badge License]: https://img.shields.io/badge/-BY_SA_4.0-ae6c18.svg?style=for-the-badge&labelColor=EF9421&logoColor=white&logo=CreativeCommons
+[Badge Likes]: https://img.shields.io/github/stars/MarkedDown/Buttons?style=for-the-badge&labelColor=d0ab23&color=b0901e&logoColor=white&logo=Trustpilot
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## How to Run
+
+You can simply copy the git repository and install the dependencies with pip in a virtual environment:
+```
+pip install -r requirements.txt
+```
+
+Or you can use Docker. Pull the image from the Accelerate Science Docker Hub repository:
+```
+docker pull acceleratescience/website-pages-template
+```
+To enter the container, run
+```
+docker run -it -p 8080:8080 website-pages-template /bin/bash
+```
+
+I suggest using the VSCode Remote - Containers extension to develop in the container. This will allow you to use the VSCode editor on your local machine while running the code in the container.
+
+To serve locally, run
+```
+mkdocs serve
+```
+
+<!-- GETTING STARTED -->
+## Prerequisites
+ENTER PREREQUISITES HERE
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under a GNU GPL-3.0 License. See `LICENSE` for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/acceleratescience/<REPO-TITLE>.svg?style=for-the-badge
+[contributors-url]: https://github.com/acceleratescience/<REPO-TITLE>/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/acceleratescience/<REPO-TITLE>.svg?style=for-the-badge
+[forks-url]: https://github.com/acceleratescience/<REPO-TITLE>/network/members
+[stars-shield]: https://img.shields.io/github/stars/acceleratescience/<REPO-TITLE>.svg?style=for-the-badge
+[stars-url]: https://github.com/acceleratescience/<REPO-TITLE>/stargazers
+[issues-shield]: https://img.shields.io/github/issues/acceleratescience/<REPO-TITLE>.svg?style=for-the-badge
+[issues-url]: https://github.com/acceleratescience/<REPO-TITLE>/issues
+[license-shield]: https://img.shields.io/github/license/acceleratescience/<REPO-TITLE>.svg?style=for-the-badge
+[license-url]: https://github.com/acceleratescience/<REPO-TITLE>/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/company/accelerate-programme-for-scientific-discovery/
+[product-screenshot]: images/screenshot.png
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Next-url]: https://nextjs.org/
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
+[Vue-url]: https://vuejs.org/
+[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+[Angular-url]: https://angular.io/
+[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
+[Svelte-url]: https://svelte.dev/
+[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
+[Laravel-url]: https://laravel.com
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com
+[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
+[JQuery-url]: https://jquery.com 
