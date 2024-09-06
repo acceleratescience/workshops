@@ -12,7 +12,7 @@ Please check the [official Mkdocs Material documentation](https://squidfunk.gith
 
 <div class="grid cards" markdown>
 
--   :material-cogs:{ .lg .middle } [__PAGE TITLE__](index.md)
+-   :material-cogs:{ .lg .middle } [Packaging and Publishing](index.md)
 
     ---
     DESCRIPTION
