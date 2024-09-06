@@ -8,14 +8,14 @@
 [![Issues][issues-shield]][issues-url]
 [![GPL License][license-shield]][license-url] -->
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
-[![Issues](https://img.shields.io/github/issues-raw/acceleratescience/<REPO-TITLE>.svg?maxAge=25000)](https://github.com/acceleratescience/<REPO-TITLE>/issues)
-[![GitHub contributors](https://img.shields.io/github/contributors/acceleratescience/<REPO-TITLE>.svg?style=flat)]()
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/acceleratescience/<REPO-TITLE>.svg?style=flat)]()
+[![Issues](https://img.shields.io/github/issues-raw/acceleratescience/workshops.svg?maxAge=25000)](https://github.com/acceleratescience/workshops/issues)
+[![GitHub contributors](https://img.shields.io/github/contributors/acceleratescience/workshops.svg?style=flat)]()
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/acceleratescience/workshops.svg?style=flat)]()
 [![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 <br>
-[![GitHub stars](https://img.shields.io/github/stars/acceleratescience/<REPO-TITLE>.svg?style=social&label=Star)]()
-[![GitHub watchers](https://img.shields.io/github/watchers/acceleratescience/<REPO-TITLE>.svg?style=social&label=Watch)]()
-[![GitHub forks](https://img.shields.io/github/forks/acceleratescience/<REPO-TITLE>.svg?style=social&label=Fork)](https://github.com/JonSnow/MyBadges)
+[![GitHub stars](https://img.shields.io/github/stars/acceleratescience/workshops.svg?style=social&label=Star)]()
+[![GitHub watchers](https://img.shields.io/github/watchers/acceleratescience/workshops.svg?style=social&label=Watch)]()
+[![GitHub forks](https://img.shields.io/github/forks/acceleratescience/workshops.svg?style=social&label=Fork)](https://github.com/JonSnow/MyBadges)
 [![GitHub followers](https://img.shields.io/github/followers/acceleratescience.svg?style=social&label=Follow)](https://github.com/JonSnow/MyBadges)
 [![Twitter Follow](https://img.shields.io/twitter/follow/AccelerateSci.svg?style=social)](https://twitter.com/AccelerateSci)
 <!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
@@ -31,32 +31,18 @@
 
   <h3 align="center">Accelerate Workshops</h3>
 
-  <p align="center">
-    Welcome to the Accelerate Science Workshops
-    <br />
-    <a href="https://acceleratescience.github.io/packaging-publishing/"><strong>Start the Course »</strong></a>
+  <p align="Left">
+    Welcome to the Accelerate Science Workshops. Here you will find a collection of workshops and tutorials designed to help you get started with software engineering and generative AI. We currently have 
     <br />
     <br />
-    <a href="https://github.com/acceleratescience/packaging-publishing/tree/basic">Get Basic Code</a>
+    <a href="https://acceleratescience.github.io/workshops/"><strong>Head to the site »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/acceleratescience/workshops/issues">Report Bug</a>
     ·
-    <a href="https://github.com/acceleratescience/packaging-publishing/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/acceleratescience/packaging-publishing/issues">Request Feature</a>
+    <a href="https://github.com/acceleratescience/workshops/issues">Request Feature</a>
   </p>
 </div>
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#howrun">How to Run</a></li>
-    <li><a href="#prerequisites">Prerequisites</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-  </ol>
-</details>
 
 
 
@@ -75,34 +61,6 @@
 [Badge Likes]: https://img.shields.io/github/stars/MarkedDown/Buttons?style=for-the-badge&labelColor=d0ab23&color=b0901e&logoColor=white&logo=Trustpilot
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## How to Run
-
-You can simply copy the git repository and install the dependencies with pip in a virtual environment:
-```
-pip install -r requirements.txt
-```
-
-Or you can use Docker. Pull the image from the Accelerate Science Docker Hub repository:
-```
-docker pull acceleratescience/website-pages-template
-```
-To enter the container, run
-```
-docker run -it -p 8080:8080 website-pages-template /bin/bash
-```
-
-I suggest using the VSCode Remote - Containers extension to develop in the container. This will allow you to use the VSCode editor on your local machine while running the code in the container.
-
-To serve locally, run
-```
-mkdocs serve
-```
-
-<!-- GETTING STARTED -->
-## Prerequisites
-ENTER PREREQUISITES HERE
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -133,16 +91,16 @@ Distributed under a GNU GPL-3.0 License. See `LICENSE` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/acceleratescience/<REPO-TITLE>.svg?style=for-the-badge
-[contributors-url]: https://github.com/acceleratescience/<REPO-TITLE>/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/acceleratescience/<REPO-TITLE>.svg?style=for-the-badge
-[forks-url]: https://github.com/acceleratescience/<REPO-TITLE>/network/members
-[stars-shield]: https://img.shields.io/github/stars/acceleratescience/<REPO-TITLE>.svg?style=for-the-badge
-[stars-url]: https://github.com/acceleratescience/<REPO-TITLE>/stargazers
-[issues-shield]: https://img.shields.io/github/issues/acceleratescience/<REPO-TITLE>.svg?style=for-the-badge
-[issues-url]: https://github.com/acceleratescience/<REPO-TITLE>/issues
-[license-shield]: https://img.shields.io/github/license/acceleratescience/<REPO-TITLE>.svg?style=for-the-badge
-[license-url]: https://github.com/acceleratescience/<REPO-TITLE>/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/acceleratescience/workshops.svg?style=for-the-badge
+[contributors-url]: https://github.com/acceleratescience/workshops/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/acceleratescience/workshops.svg?style=for-the-badge
+[forks-url]: https://github.com/acceleratescience/workshops/network/members
+[stars-shield]: https://img.shields.io/github/stars/acceleratescience/workshops.svg?style=for-the-badge
+[stars-url]: https://github.com/acceleratescience/workshops/stargazers
+[issues-shield]: https://img.shields.io/github/issues/acceleratescience/workshops.svg?style=for-the-badge
+[issues-url]: https://github.com/acceleratescience/workshops/issues
+[license-shield]: https://img.shields.io/github/license/acceleratescience/workshops.svg?style=for-the-badge
+[license-url]: https://github.com/acceleratescience/workshops/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/company/accelerate-programme-for-scientific-discovery/
 [product-screenshot]: images/screenshot.png
