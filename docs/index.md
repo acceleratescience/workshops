@@ -2,23 +2,22 @@
     <img src="./imgs/full_acc.png" alt="Logo" width=500>
   </a>
 
-# COURSE TITLE
+# Accelerate Science Resource Hub
 
-Welcome to the material for COURSE NAME.
+Welcome to the Accelerate Programme for Scientific Discovery Resource Hub. Here you can find resources to help you get started with scientific software development, machine learning, and generative AI.
 
-Please check the [official Mkdocs Material documentation](https://squidfunk.github.io/mkdocs-material/) for more information on how to use this template.
 
-# Sections
-
+# Workshops and Tutorials
+<!-- 
 <div class="grid cards" markdown>
 
--   :material-cogs:{ .lg .middle } [Packaging and Publishing](https://docs.science.ai.cam.ac.uk/packaging-publishing/)
+-   :material-cogs:{ .lg .middle } [__Packaging and Publishing__](https://docs.science.ai.cam.ac.uk/packaging-publishing/)
 
     ---
     DESCRIPTION
 
 
--   :fontawesome-solid-book:{ .lg .middle } [__PAGE TITLE__](multi_1/subpage_1.md)
+-   :fontawesome-solid-book:{ .lg .middle } [__AI Core Concepts__](https://docs.science.ai.cam.ac.uk/ai-core-concepts/)
 
     ---
     DESCRIPTION
@@ -44,20 +43,38 @@ Please check the [official Mkdocs Material documentation](https://squidfunk.gith
     ---
     DESCRIPTION
 
-</div>
+</div> -->
 
 <div class="grid cards" markdown>
 
--   :fontawesome-solid-person-chalkboard:{ .lg .middle } [__Slides__](resources/slides.md)
+-   :fontawesome-solid-book:{ .lg .middle } [__AI Core Concepts__](https://docs.science.ai.cam.ac.uk/ai-core-concepts/)
 
     ---
-    Here you can find the slides for the course material
+    Each section contains a summary of further resources, but here they are all collected for convenience
 
 </div>
 
 <div class="grid cards" markdown>
 
--   :fontawesome-solid-paperclip:{ .lg .middle } [__Resources__](resources/references.md)
+-   :material-cogs:{ .lg .middle } [__Packaging and Publishing Workshop__](https://docs.science.ai.cam.ac.uk/packaging-publishing/)
+
+    ---
+    Learn how to package and publish your scientific research software using GitHub Actions.
+
+</div>
+
+<div class="grid cards" markdown>
+
+-   :material-feather:{ .lg .middle } [__Large Language Models__](https://github.com/acceleratescience/large-language-models)
+
+    ---
+    Each section contains a summary of further resources, but here they are all collected for convenience
+
+</div>
+
+<div class="grid cards" markdown>
+
+-   :fontawesome-solid-paperclip:{ .lg .middle } [__Generative AI with Diffusion Models__](https://github.com/acceleratescience/diffusion-models)
 
     ---
     Each section contains a summary of further resources, but here they are all collected for convenience

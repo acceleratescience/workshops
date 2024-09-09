@@ -1,23 +1,15 @@
-site_name: SITE NAME
+site_name: Accelerate Science Resource Hub
 repo_url: https://github.com/acceleratescience/REPO-TITLE
-site_url: https://acceleratescience.github.io/workshops
+site_url: https://docs.science.ai.cam.ac.uk/
 nav:
   - Home: 
     - Welcome!: index.md
     - License: Home/LICENSE.md
     - About us: Home/about.md
-  - Single Page 1: single.md
-  - Multi Page 1:
-    - Subpage 1: multi_1/subpage_1.md
-    - Subpage 2: multi_1/subpage_2.md
-  - Multi Page 2:
-    - multi_2/index.md
-    - Page 1: multi_2/subpage_1.md
-    - Page 2: multi_2/subpage_2.md
-  - Resources:
-    - resources/index.md
-    - Slides: resources/slides.md
-    - Further reading: resources/references.md
+  - AI Core Concepts: https://docs.science.ai.cam.ac.uk/ai-core-concepts/
+  - Packaging and Publishing: https://docs.science.ai.cam.ac.uk/packaging-publishing/
+  - Large Language Models: https://github.com/acceleratescience/large-language-models
+  - Generative AI with Diffusion Models: https://github.com/acceleratescience/diffusion-models
 theme:
   favicon: imgs/trace.svg
   name: material
@@ -99,6 +91,7 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 extra:
+  homepage: https://docs.science.ai.cam.ac.uk/
   consent:
       title: Cookie consent
       description: >- 
@@ -121,13 +114,13 @@ extra:
           data: 1
           note: >-
             Thanks for your feedback! Help us improve this page by
-            using our <a href="https://github.com/acceleratescience/REPO-TITLE/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
+            using our <a href="https://github.com/acceleratescience/workshops/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
         - icon: material/emoticon-sad-outline
           name: This page could be improved
           data: 0
           note: >- 
             Thanks for your feedback! Help us improve this page by
-            using our <a href="https://github.com/acceleratescience/REPO-TITLE/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
+            using our <a href="https://github.com/acceleratescience/workshops/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
 copyright: >
   Copyright &copy; 2024 Accelerate Programme for Scientific Discovery –
   <a href="#__consent">Change cookie settings</a>
