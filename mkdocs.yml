@@ -9,7 +9,7 @@ nav:
   - AI Core Concepts: https://docs.science.ai.cam.ac.uk/ai-core-concepts/
   - Packaging and Publishing: https://docs.science.ai.cam.ac.uk/packaging-publishing/
   - Large Language Models: https://github.com/acceleratescience/large-language-models
-  - Generative AI with Diffusion Models: https://github.com/acceleratescience/diffusion-models
+  - Diffusion Models in Generative AI: https://github.com/acceleratescience/diffusion-models
 theme:
   favicon: imgs/trace.svg
   name: material
