@@ -4,7 +4,7 @@
 
 # Accelerate Science Resource Hub
 
-Welcome to the Accelerate Programme for Scientific Discovery Resource Hub. Here you can find resources to help you get started with scientific software development, machine learning, and generative AI.
+Welcome to the Accelerate Programme for Scientific Discovery Resource Hub. Here you can find resources, including workshops and tutorials, to help you get started with scientific software development, machine learning, and generative AI.
 
 
 # Workshops and Tutorials
