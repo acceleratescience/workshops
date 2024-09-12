@@ -32,7 +32,7 @@
   <h3 align="center">Accelerate Workshops</h3>
 
   <p align="Left">
-    Welcome to the Accelerate Science Workshops. Here you will find a collection of workshops and tutorials designed to help you get started with software engineering and generative AI. We currently have 
+    Welcome to the Accelerate Science Workshops Repository. Here you will find a collection of workshops and tutorials designed to help you get started with software engineering and generative AI. We currently have 
     <br />
     <br />
     <a href="https://acceleratescience.github.io/workshops/"><strong>Head to the site »</strong></a>
