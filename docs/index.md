@@ -65,7 +65,7 @@ Welcome to the Accelerate Programme for Scientific Discovery Resource Hub. Here 
 
 <div class="grid cards" markdown>
 
--   :material-feather:{ .lg .middle } [__Large Language Models__](https://github.com/acceleratescience/large-language-models)
+-   :material-feather:{ .lg .middle } [__Large Language Models__](https://docs.science.ai.cam.ac.uk/large-language-models)
 
     ---
     Each section contains a summary of further resources, but here they are all collected for convenience
