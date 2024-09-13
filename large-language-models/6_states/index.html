@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://docs.science.ai.cam.ac.uk/large-language-models/2_open_ai/">
+        <link rel="canonical" href="https://docs.science.ai.cam.ac.uk/large-language-models/6_states/">
       
       
-        <link rel="prev" href="../1_setting_up/">
+        <link rel="prev" href="../5_pydantic/">
       
-      
-        <link rel="next" href="../prompting/3_prompting/">
       
       
       <link rel="icon" href="../imgs/trace.svg">
@@ -22,7 +20,7 @@
     
     
       
-        <title>The OpenAI API - Hands on LLM Workshop</title>
+        <title>States - Hands on LLM Workshop</title>
       
     
     
@@ -97,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-openai-api" class="md-skip">
+        <a href="#states" class="md-skip">
           Skip to content
         </a>
       
@@ -132,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              The OpenAI API
+              States
             
           </span>
         </div>
@@ -285,11 +283,9 @@
         
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../2_open_ai/" class="md-tabs__link">
         
   
     
@@ -341,9 +337,11 @@
         
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../6_states/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
     
@@ -563,30 +561,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    The OpenAI API
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../2_open_ai/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -595,53 +573,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-does-the-model-give-us" class="md-nav__link">
-    <span class="md-ellipsis">
-      What does the model give us?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#streaming-a-response" class="md-nav__link">
-    <span class="md-ellipsis">
-      Streaming a response
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vision-input" class="md-nav__link">
-    <span class="md-ellipsis">
-      Vision input
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -765,10 +696,30 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../6_states/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    States
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -777,6 +728,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#conversation-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conversation History
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tracking-tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tracking tokens
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1240,12 +1229,33 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="the-openai-api">The OpenAI API<a class="anchor-link" href="#the-openai-api">¶</a></h1><p>The beauty of the OpenAI API is that is very simple to use.</p>
-<p>In your environment you should have a file called <code>.env</code> with the following:</p>
-<div class="highlight"><pre><span></span><span class="nv">OPENAI_API_KEY</span><span class="o">=</span>sk-proj-1234567890
-</pre></div>
-<p>We will give you this key in the workshop. <strong>The key will be deactivate after the workshop!</strong></p>
-<p>You can then grab the key using python:</p>
+<h1 id="states">States<a class="anchor-link" href="#states">¶</a></h1><p>LLMs calls are inherently stateless - they do not have memory of any previous interactions. Every call is an independent event, and <strong>YOU</strong> must manage any information that needs to be carried over time.</p>
+<p>In this notebook we will look at a few different things that we might want to keep track of between calls.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="conversation-history">Conversation History<a class="anchor-link" href="#conversation-history">¶</a></h2><p>Keeping track of the conversation history is actually easy. Firstly it is important to remember that LLMs often have the following pattern:</p>
+<pre><code>system prompt -&gt; user prompt -&gt; model response -&gt; user prompt -&gt; model response -&gt; etc.
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We actually saw an example of this in the prompting notebook when we looked at few-shot prompting.</p>
+<p>Here is a really simple example of how we can keep track of the conversation history.</p>
 </div>
 </div>
 </div>
@@ -1255,7 +1265,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [66]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-1">
@@ -1268,50 +1278,25 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">openai</span> <span class="kn">import</span> <span class="n">OpenAI</span>
-<span class="kn">import</span> <span class="nn">dotenv</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">from</span> <span class="nn">rich</span> <span class="kn">import</span> <span class="nb">print</span> <span class="k">as</span> <span class="n">rprint</span>
-
-<span class="n">dotenv</span><span class="o">.</span><span class="n">load_dotenv</span><span class="p">()</span>
-
-<span class="n">client</span> <span class="o">=</span> <span class="n">OpenAI</span><span class="p">()</span>
-
-<span class="n">OPENAI_API_KEY</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">"OPENAI_API_KEY"</span><span class="p">)</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">system_state</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"conversation_history"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-1">from openai import OpenAI
-import dotenv
-import os
-from rich import print as rprint
-
-dotenv.load_dotenv()
-
-client = OpenAI()
-
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")</div>
+<div class="clipboard-copy-txt" id="cell-1">system_state = {
+    "conversation_history": []
+}</div>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Calling a model is simple</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-2">
@@ -1324,30 +1309,178 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">system_prompt</span> <span class="o">=</span> <span class="s2">"You are Matsuo Basho, the great Japanese haiku poet."</span>
-<span class="n">user_query</span> <span class="o">=</span> <span class="s2">"Can you give me a haiku about a Samurai cat."</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">system_prompt</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">"You are a helpful philosophical assistant. "</span>
+    <span class="s2">"You will help me think about philosophical questions. "</span>
+    <span class="s2">"Please keep your answers concise and to the point."</span>
+<span class="p">)</span>
 
-<span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
-  <span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4o-mini"</span><span class="p">,</span>
-  <span class="n">messages</span><span class="o">=</span><span class="p">[</span>
-    <span class="p">{</span><span class="s2">"role"</span><span class="p">:</span> <span class="s2">"system"</span><span class="p">,</span> <span class="s2">"content"</span><span class="p">:</span> <span class="n">system_prompt</span><span class="p">},</span>
-    <span class="p">{</span><span class="s2">"role"</span><span class="p">:</span> <span class="s2">"user"</span><span class="p">,</span> <span class="s2">"content"</span><span class="p">:</span> <span class="n">user_query</span><span class="p">},</span>
-  <span class="p">],</span>
-  <span class="n">max_tokens</span><span class="o">=</span><span class="mi">128</span>
+<span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"role"</span><span class="p">:</span> <span class="s2">"system"</span><span class="p">,</span>
+    <span class="s2">"content"</span><span class="p">:</span> <span class="n">system_prompt</span>
+<span class="p">})</span>
+
+<span class="n">user_prompt</span> <span class="o">=</span> <span class="s2">"What is the meaning of life?"</span>
+
+<span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"role"</span><span class="p">:</span> <span class="s2">"user"</span><span class="p">,</span>
+    <span class="s2">"content"</span><span class="p">:</span> <span class="n">user_prompt</span>
+<span class="p">})</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-2">system_prompt = (
+    "You are a helpful philosophical assistant. "
+    "You will help me think about philosophical questions. "
+    "Please keep your answers concise and to the point."
+)
+
+system_state["conversation_history"].append({
+    "role": "system",
+    "content": system_prompt
+})
+
+user_prompt = "What is the meaning of life?"
+
+system_state["conversation_history"].append({
+    "role": "user",
+    "content": user_prompt
+})</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-3">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">for</span> <span class="n">message</span> <span class="ow">in</span> <span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">message</span><span class="p">[</span><span class="s1">'role'</span><span class="p">]</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">message</span><span class="p">[</span><span class="s1">'content'</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-3">for message in system_state["conversation_history"]:
+    print(f"{message['role']}: {message['content']}\n")</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>system: You are a helpful philosophical assistant. You will help me think about philosophical questions. Please keep your answers concise and to the point.
+
+user: What is the meaning of life?
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Now we can use this conversation history to generate a response.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-4">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">openai</span> <span class="kn">import</span> <span class="n">OpenAI</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">OpenAI</span><span class="p">()</span>
+
+<span class="kn">import</span> <span class="nn">dotenv</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="n">dotenv</span><span class="o">.</span><span class="n">load_dotenv</span><span class="p">()</span>
+
+<span class="n">OPENAI_API_KEY</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">"OPENAI_API_KEY"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-4">from openai import OpenAI
+client = OpenAI()
+
+import dotenv
+import os
+
+dotenv.load_dotenv()
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-5">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+    <span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4o-mini"</span><span class="p">,</span>
+    <span class="n">messages</span><span class="o">=</span><span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">],</span>
+    <span class="n">max_tokens</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span>
+    <span class="n">temperature</span><span class="o">=</span><span class="mf">1.0</span>
 <span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-2">system_prompt = "You are Matsuo Basho, the great Japanese haiku poet."
-user_query = "Can you give me a haiku about a Samurai cat."
-
-response = client.chat.completions.create(
-  model="gpt-4o-mini",
-  messages=[
-    {"role": "system", "content": system_prompt},
-    {"role": "user", "content": user_query},
-  ],
-  max_tokens=128
+<div class="clipboard-copy-txt" id="cell-5">response = client.chat.completions.create(
+    model="gpt-4o-mini",
+    messages=system_state["conversation_history"],
+    max_tokens=512,
+    temperature=1.0
 )
 
 print(response.choices[0].message.content)</div>
@@ -1362,286 +1495,15 @@ print(response.choices[0].message.content)</div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Silent pawsteps glide,  
-Moonlight dances on the blade—  
-Feline honor blinds.  
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Purrfect.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Here we have used model <code>gpt-4o-mini</code>, but there are a range of models available.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [85]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-3">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">for</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">client</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">list</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-3">for model in client.models.list():
-    print(model)</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Model(id='text-embedding-3-small', created=1705948997, object='model', owned_by='system')
-Model(id='tts-1-1106', created=1699053241, object='model', owned_by='system')
-Model(id='dall-e-2', created=1698798177, object='model', owned_by='system')
-Model(id='gpt-4-1106-preview', created=1698957206, object='model', owned_by='system')
-Model(id='tts-1', created=1681940951, object='model', owned_by='openai-internal')
-Model(id='tts-1-hd-1106', created=1699053533, object='model', owned_by='system')
-Model(id='tts-1-hd', created=1699046015, object='model', owned_by='system')
-Model(id='dall-e-3', created=1698785189, object='model', owned_by='system')
-Model(id='whisper-1', created=1677532384, object='model', owned_by='openai-internal')
-Model(id='text-embedding-ada-002', created=1671217299, object='model', owned_by='openai-internal')
-Model(id='text-embedding-3-large', created=1705953180, object='model', owned_by='system')
-Model(id='gpt-4-turbo', created=1712361441, object='model', owned_by='system')
-Model(id='gpt-4-0125-preview', created=1706037612, object='model', owned_by='system')
-Model(id='gpt-4-turbo-2024-04-09', created=1712601677, object='model', owned_by='system')
-Model(id='gpt-3.5-turbo', created=1677610602, object='model', owned_by='openai')
-Model(id='gpt-4-turbo-preview', created=1706037777, object='model', owned_by='system')
-Model(id='gpt-3.5-turbo-0125', created=1706048358, object='model', owned_by='system')
-Model(id='gpt-3.5-turbo-1106', created=1698959748, object='model', owned_by='system')
-Model(id='chatgpt-4o-latest', created=1723515131, object='model', owned_by='system')
-Model(id='gpt-3.5-turbo-16k', created=1683758102, object='model', owned_by='openai-internal')
-Model(id='gpt-3.5-turbo-instruct-0914', created=1694122472, object='model', owned_by='system')
-Model(id='gpt-4', created=1687882411, object='model', owned_by='openai')
-Model(id='gpt-4-0613', created=1686588896, object='model', owned_by='openai')
-Model(id='gpt-3.5-turbo-instruct', created=1692901427, object='model', owned_by='system')
-Model(id='gpt-4o-2024-08-06', created=1722814719, object='model', owned_by='system')
-Model(id='babbage-002', created=1692634615, object='model', owned_by='system')
-Model(id='davinci-002', created=1692634301, object='model', owned_by='system')
-Model(id='gpt-4o-mini-2024-07-18', created=1721172717, object='model', owned_by='system')
-Model(id='gpt-4o', created=1715367049, object='model', owned_by='system')
-Model(id='gpt-4o-2024-05-13', created=1715368132, object='model', owned_by='system')
-Model(id='gpt-4o-mini', created=1721172741, object='model', owned_by='system')
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>As of writing <code>gpt-4o-2024-08-06</code> is the current best offering. But we'll stick with <code>gpt-4o-mini</code>, because it is cheaper and still highly capable.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="what-does-the-model-give-us">What does the model give us?<a class="anchor-link" href="#what-does-the-model-give-us">¶</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>What is the <code>response</code> object?</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [65]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-4">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">rprint</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-4">rprint(response)</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">ChatCompletion</span><span style="font-weight: bold">(</span>
-    <span style="color: #808000; text-decoration-color: #808000">id</span>=<span style="color: #008000; text-decoration-color: #008000">'chatcmpl-A5yRAL35y156KgXeY6uUBbLNHD4qh'</span>,
-    <span style="color: #808000; text-decoration-color: #808000">choices</span>=<span style="font-weight: bold">[</span>
-        <span style="color: #800080; text-decoration-color: #800080; font-weight: bold">Choice</span><span style="font-weight: bold">(</span>
-            <span style="color: #808000; text-decoration-color: #808000">finish_reason</span>=<span style="color: #008000; text-decoration-color: #008000">'stop'</span>,
-            <span style="color: #808000; text-decoration-color: #808000">index</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>,
-            <span style="color: #808000; text-decoration-color: #808000">logprobs</span>=<span style="color: #800080; text-decoration-color: #800080; font-style: italic">None</span>,
-            <span style="color: #808000; text-decoration-color: #808000">message</span>=<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">ChatCompletionMessage</span><span style="font-weight: bold">(</span>
-                <span style="color: #808000; text-decoration-color: #808000">content</span>=<span style="color: #008000; text-decoration-color: #008000">'Silent pawsteps glide,  \nMoonlight dances on the blade—  \nFeline honor blinds.  '</span>,
-                <span style="color: #808000; text-decoration-color: #808000">refusal</span>=<span style="color: #800080; text-decoration-color: #800080; font-style: italic">None</span>,
-                <span style="color: #808000; text-decoration-color: #808000">role</span>=<span style="color: #008000; text-decoration-color: #008000">'assistant'</span>,
-                <span style="color: #808000; text-decoration-color: #808000">function_call</span>=<span style="color: #800080; text-decoration-color: #800080; font-style: italic">None</span>,
-                <span style="color: #808000; text-decoration-color: #808000">tool_calls</span>=<span style="color: #800080; text-decoration-color: #800080; font-style: italic">None</span>
-            <span style="font-weight: bold">)</span>
-        <span style="font-weight: bold">)</span>
-    <span style="font-weight: bold">]</span>,
-    <span style="color: #808000; text-decoration-color: #808000">created</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1725987324</span>,
-    <span style="color: #808000; text-decoration-color: #808000">model</span>=<span style="color: #008000; text-decoration-color: #008000">'gpt-4o-mini-2024-07-18'</span>,
-    <span style="color: #808000; text-decoration-color: #808000">object</span>=<span style="color: #008000; text-decoration-color: #008000">'chat.completion'</span>,
-    <span style="color: #808000; text-decoration-color: #808000">service_tier</span>=<span style="color: #800080; text-decoration-color: #800080; font-style: italic">None</span>,
-    <span style="color: #808000; text-decoration-color: #808000">system_fingerprint</span>=<span style="color: #008000; text-decoration-color: #008000">'fp_483d39d857'</span>,
-    <span style="color: #808000; text-decoration-color: #808000">usage</span>=<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">CompletionUsage</span><span style="font-weight: bold">(</span><span style="color: #808000; text-decoration-color: #808000">completion_tokens</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">20</span>, <span style="color: #808000; text-decoration-color: #808000">prompt_tokens</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">37</span>, <span style="color: #808000; text-decoration-color: #808000">total_tokens</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">57</span><span style="font-weight: bold">)</span>
-<span style="font-weight: bold">)</span>
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>There is some useful stuff in here, apart from the <code>content</code> property, such as the token usage. You might notice some other things too, like <code>function_call</code> and <code>tool_calls</code>. These are specific to OpenAI models, and not every model supports function calling or tools, so we won't cover them. We can achieve many of the same effects without them anyway.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="streaming-a-response">Streaming a response<a class="anchor-link" href="#streaming-a-response">¶</a></h3><p>Streaming a response is mainly for user experience. It allows the user to see the response as it comes in, rather than waiting for the whole response to come in. For many applications, this might not be necessary.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-5">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
-  <span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4o-mini"</span><span class="p">,</span>
-  <span class="n">messages</span><span class="o">=</span><span class="p">[</span>
-    <span class="p">{</span><span class="s2">"role"</span><span class="p">:</span> <span class="s2">"system"</span><span class="p">,</span> <span class="s2">"content"</span><span class="p">:</span> <span class="n">system_prompt</span><span class="p">},</span>
-    <span class="p">{</span><span class="s2">"role"</span><span class="p">:</span> <span class="s2">"user"</span><span class="p">,</span> <span class="s2">"content"</span><span class="p">:</span> <span class="n">user_query</span><span class="p">},</span>
-  <span class="p">],</span>
-  <span class="n">max_tokens</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span>
-  <span class="n">stream</span><span class="o">=</span><span class="kc">True</span>
-<span class="p">)</span>
+<pre>The meaning of life is a deeply personal and subjective question. Various philosophical, spiritual, and existential perspectives offer different answers: 
 
-<span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">response</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">chunk</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">delta</span><span class="o">.</span><span class="n">content</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">chunk</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">delta</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-5">response = client.chat.completions.create(
-  model="gpt-4o-mini",
-  messages=[
-    {"role": "system", "content": system_prompt},
-    {"role": "user", "content": user_query},
-  ],
-  max_tokens=128,
-  stream=True
-)
+1. **Existentialism** suggests that life has no inherent meaning, and individuals must create their own purpose.
+2. **Religious perspectives** often provide a framework where life's meaning is linked to a divine purpose or adherence to spiritual teachings.
+3. **Humanism** focuses on the meaning derived from human relationships, personal fulfillment, and contributing to the greater good.
+4. **Buddhism** emphasizes the pursuit of enlightenment and understanding the nature of suffering as key to a meaningful life.
 
-for chunk in response:
-    if chunk.choices[0].delta.content is not None:
-        print(chunk.choices[0].delta.content, end="")</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Silent paws in dusk,  
-Moonlit blade gleams in the night—  
-Fierce heart, whiskers twitch.</pre>
+Ultimately, the meaning of life may depend on one's values, beliefs, and experiences.
+</pre>
 </div>
 </div>
 </div>
@@ -1654,31 +1516,17 @@ Fierce heart, whiskers twitch.</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="vision-input">Vision input<a class="anchor-link" href="#vision-input">¶</a></h2><p>Let's try an example of inputting an image. First we need to look at the image:</p>
-<p><img alt="plot" src="../imgs/figure.jpeg"/></p>
+<p>Great, but now what happens if I want to ask a follow up question?</p>
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Here is the caption from this figure:</p>
-<p><strong>Fig. 2 Spatial and temporal self-similarity and correlation in switching activity.</strong></p>
-<p><em>(A) Percolating devices produce complex patterns of switching events that are self-similar in nature. The top panel contains 2400 s of data, with the bottom panels showing segments of the data with 10, 100, and 1000 times greater temporal magnification and with 3, 9, and 27 times greater magnification on the vertical scale (units of G0 = 2e2/h, the quantum of conductance, are used for convenience). The activity patterns appear qualitatively similar on multiple different time scales. (B and E) The probability density function (PDF) for changes in total network conductance, P(ΔG), resulting from switching activity exhibits heavy-tailed probability distributions. (C and F) IEIs follow power law distributions, suggestive of correlations between events. (D and G) Further evidence of temporal correlation between events is given by the autocorrelation function (ACF) of the switching activity (red), which decays as a power law over several decades. When the IEI sequence is shuffled (gray), the correlations between events are destroyed, resulting in a significant increase in slope in the ACF. The data shown in (B) to (D) (sample I) were obtained with our standard (slow) sampling rate, and the data shown in (E) to (G) (sample II) were measured 1000 times faster (see Materials and Methods), providing further evidence for self-similarity.</em></p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [83]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-6">
@@ -1691,161 +1539,34 @@ Fierce heart, whiskers twitch.</pre>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">prompt</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="s2">"This figure is a caption from a paper entitled Avalanches and criticality in self-organized nanoscale networks. "</span>
-    <span class="s2">"Please provide a caption for this figure. "</span>
-    <span class="s2">"You should describe the figure, grouping the panels where appropriate. "</span>
-    <span class="s2">"Feel free to make any inferences you need to."</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">follow_up_prompt</span> <span class="o">=</span> <span class="s2">"Can you tell more about point 1?"</span>
 
-<span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-6">prompt = (
-    "This figure is a caption from a paper entitled Avalanches and criticality in self-organized nanoscale networks. "
-    "Please provide a caption for this figure. "
-    "You should describe the figure, grouping the panels where appropriate. "
-    "Feel free to make any inferences you need to."
-
-)</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [81]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-7">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">base64</span>
-<span class="kn">import</span> <span class="nn">requests</span>
-
-<span class="c1"># Function to encode the image</span>
-<span class="k">def</span> <span class="nf">encode_image</span><span class="p">(</span><span class="n">image_path</span><span class="p">):</span>
-  <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">image_path</span><span class="p">,</span> <span class="s2">"rb"</span><span class="p">)</span> <span class="k">as</span> <span class="n">image_file</span><span class="p">:</span>
-    <span class="k">return</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="n">image_file</span><span class="o">.</span><span class="n">read</span><span class="p">())</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">'utf-8'</span><span class="p">)</span>
-
-<span class="c1"># Path to your image</span>
-<span class="n">image_path</span> <span class="o">=</span> <span class="s2">"imgs/figure.jpeg"</span>
-
-
-<span class="k">def</span> <span class="nf">get_image_caption</span><span class="p">(</span><span class="n">image_path</span><span class="p">,</span> <span class="n">prompt</span><span class="p">):</span>
-  <span class="c1"># Getting the base64 string</span>
-  <span class="n">base64_image</span> <span class="o">=</span> <span class="n">encode_image</span><span class="p">(</span><span class="n">image_path</span><span class="p">)</span>
-
-  <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">"Content-Type"</span><span class="p">:</span> <span class="s2">"application/json"</span><span class="p">,</span>
-    <span class="s2">"Authorization"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"Bearer </span><span class="si">{</span><span class="n">OPENAI_API_KEY</span><span class="si">}</span><span class="s2">"</span>
-  <span class="p">}</span>
-
-  <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">"model"</span><span class="p">:</span> <span class="s2">"gpt-4o-mini"</span><span class="p">,</span>
-    <span class="s2">"messages"</span><span class="p">:</span> <span class="p">[</span>
-      <span class="p">{</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+    <span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4o-mini"</span><span class="p">,</span>
+    <span class="n">messages</span><span class="o">=</span><span class="p">[{</span>
         <span class="s2">"role"</span><span class="p">:</span> <span class="s2">"user"</span><span class="p">,</span>
-        <span class="s2">"content"</span><span class="p">:</span> <span class="p">[</span>
-          <span class="p">{</span>
-            <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"text"</span><span class="p">,</span>
-            <span class="s2">"text"</span><span class="p">:</span> <span class="n">prompt</span>
-          <span class="p">},</span>
-          <span class="p">{</span>
-            <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"image_url"</span><span class="p">,</span>
-            <span class="s2">"image_url"</span><span class="p">:</span> <span class="p">{</span>
-              <span class="s2">"url"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"data:image/jpeg;base64,</span><span class="si">{</span><span class="n">base64_image</span><span class="si">}</span><span class="s2">"</span>
-            <span class="p">}</span>
-          <span class="p">}</span>
-        <span class="p">]</span>
-      <span class="p">}</span>
-    <span class="p">],</span>
-    <span class="s2">"max_tokens"</span><span class="p">:</span> <span class="mi">512</span>
-  <span class="p">}</span>
+        <span class="s2">"content"</span><span class="p">:</span> <span class="n">follow_up_prompt</span>
+    <span class="p">}],</span>
+    <span class="n">max_tokens</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span>
+    <span class="n">temperature</span><span class="o">=</span><span class="mf">1.0</span>
+<span class="p">)</span>
 
-  <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">"https://api.openai.com/v1/chat/completions"</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-7">import base64
-import requests
+<div class="clipboard-copy-txt" id="cell-6">follow_up_prompt = "Can you tell more about point 1?"
 
-# Function to encode the image
-def encode_image(image_path):
-  with open(image_path, "rb") as image_file:
-    return base64.b64encode(image_file.read()).decode('utf-8')
-
-# Path to your image
-image_path = "imgs/figure.jpeg"
-
-
-def get_image_caption(image_path, prompt):
-  # Getting the base64 string
-  base64_image = encode_image(image_path)
-
-  headers = {
-    "Content-Type": "application/json",
-    "Authorization": f"Bearer {OPENAI_API_KEY}"
-  }
-
-  payload = {
-    "model": "gpt-4o-mini",
-    "messages": [
-      {
+response = client.chat.completions.create(
+    model="gpt-4o-mini",
+    messages=[{
         "role": "user",
-        "content": [
-          {
-            "type": "text",
-            "text": prompt
-          },
-          {
-            "type": "image_url",
-            "image_url": {
-              "url": f"data:image/jpeg;base64,{base64_image}"
-            }
-          }
-        ]
-      }
-    ],
-    "max_tokens": 512
-  }
+        "content": follow_up_prompt
+    }],
+    max_tokens=512,
+    temperature=1.0
+)
 
-  response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)</div>
+print(response.choices[0].message.content)
 </div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [82]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-8">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">'choices'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">'message'</span><span class="p">][</span><span class="s1">'content'</span><span class="p">])</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-8">print(response.json()['choices'][0]['message']['content'])</div>
 </div>
 </div>
 </div>
@@ -1857,20 +1578,7 @@ def get_image_caption(image_path, prompt):
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>### Figure Caption
-
-**Figure: Dynamics of Self-Organized Nanoscale Networks**  
-This figure illustrates the characteristics of fluctuations and scaling behavior in self-organized nanoscale networks.
-
-**Panel A:** Time series data showing changes in conductance \((\Delta G)\) over various time scales. The four sub-panels depict fluctuations on different scales: the topmost trace spans 100 seconds, followed by traces at 10 seconds, 1 second, and 0.1 seconds, respectively.
-
-**Panels B and E:** Probability distribution plots \(P(\Delta G)\) of the fluctuations, illustrating a power-law behavior. The fitted lines correspond to exponents \(\Delta G \approx -2.59\) (B) and \(\Delta G \approx -2.36\) (E), highlighting the heavy-tailed nature of the distributions.
-
-**Panels C and F:** Time distribution plots \(P(t)\) for the fluctuation events, demonstrating power-law scaling with exponents \(t \approx -1.39\) (C) and \(t \approx -1.30\) (F). 
-
-**Panels D and G:** Temporal analysis of the fluctuations represented by \(A(t)\), with power-law fits showing exponents: \(t \approx -0.19\) and \(t \approx -0.23\) (D), and \(t \approx -0.66\) and \(t \approx -0.64\) (G), indicating complex time-dependent behaviors in the network's response. 
-
-Overall, the figure provides insights into the critical dynamics and avalanche-like behavior characterizing nanoscale networks.
+<pre>Of course! However, I need more context to provide a detailed response. Could you please specify what "point 1" you are referring to? This could relate to a list, an article, or a particular topic. Let me know so I can assist you better!
 </pre>
 </div>
 </div>
@@ -1884,7 +1592,78 @@ Overall, the figure provides insights into the critical dynamics and avalanche-l
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>I mean, I don't know about you, but I think that's incredible.</p>
+<p>Obviously it has no memory of the previous conversation. So we just need to append the follow up prompt to the conversation history.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-7">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+    <span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4o-mini"</span><span class="p">,</span>
+    <span class="n">messages</span><span class="o">=</span><span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">],</span>
+    <span class="n">max_tokens</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span>
+    <span class="n">temperature</span><span class="o">=</span><span class="mf">1.0</span>
+<span class="p">)</span>
+
+<span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"role"</span><span class="p">:</span> <span class="s2">"assistant"</span><span class="p">,</span>
+    <span class="s2">"content"</span><span class="p">:</span> <span class="n">response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span>
+<span class="p">})</span>
+
+<span class="k">for</span> <span class="n">message</span> <span class="ow">in</span> <span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">message</span><span class="p">[</span><span class="s1">'role'</span><span class="p">]</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">message</span><span class="p">[</span><span class="s1">'content'</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-7">response = client.chat.completions.create(
+    model="gpt-4o-mini",
+    messages=system_state["conversation_history"],
+    max_tokens=512,
+    temperature=1.0
+)
+
+system_state["conversation_history"].append({
+    "role": "assistant",
+    "content": response.choices[0].message.content
+})
+
+for message in system_state["conversation_history"]:
+    print(f"{message['role'].upper()}: {message['content']}\n")</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>SYSTEM: You are a helpful philosophical assistant. You will help me think about philosophical questions. Please keep your answers concise and to the point.
+
+USER: What is the meaning of life?
+
+ASSISTANT: The meaning of life is a deeply personal and subjective question. Some philosophical perspectives suggest it's about seeking happiness, fulfilling potential, or contributing to others. Existentialists argue it’s up to each individual to create their own meaning. Others find purpose in spiritual beliefs or connections with nature. Ultimately, it varies for each person based on their values, experiences, and beliefs.
+
+</pre>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1895,7 +1674,290 @@ Overall, the figure provides insights into the critical dynamics and avalanche-l
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Now that we have the basics of using the OpenAI API, let's look at prompting.</p>
+<p>And now we can keep the conversation going in a simple loop. If you run this cell a few times you will see that the conversation history is correctly maintained.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-8">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">user_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"You: "</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">user_input</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'exit'</span><span class="p">,</span> <span class="s1">'quit'</span><span class="p">,</span> <span class="s1">'bye'</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Assistant: Goodbye!"</span><span class="p">)</span>
+        <span class="k">break</span>
+    
+    <span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+        <span class="s2">"role"</span><span class="p">:</span> <span class="s2">"user"</span><span class="p">,</span>
+        <span class="s2">"content"</span><span class="p">:</span> <span class="n">user_input</span>
+    <span class="p">})</span>
+    
+    <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+        <span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4o-mini"</span><span class="p">,</span>
+        <span class="n">messages</span><span class="o">=</span><span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">],</span>
+        <span class="n">max_tokens</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span>
+        <span class="n">temperature</span><span class="o">=</span><span class="mf">1.0</span>
+    <span class="p">)</span>
+    
+    <span class="n">assistant_response</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Assistant: </span><span class="si">{</span><span class="n">assistant_response</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+    
+    <span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+        <span class="s2">"role"</span><span class="p">:</span> <span class="s2">"assistant"</span><span class="p">,</span>
+        <span class="s2">"content"</span><span class="p">:</span> <span class="n">assistant_response</span>
+    <span class="p">})</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-8">while True:
+    user_input = input("You: ")
+    
+    if user_input.lower() in ['exit', 'quit', 'bye']:
+        print("Assistant: Goodbye!")
+        break
+    
+    system_state["conversation_history"].append({
+        "role": "user",
+        "content": user_input
+    })
+    
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=system_state["conversation_history"],
+        max_tokens=512,
+        temperature=1.0
+    )
+    
+    assistant_response = response.choices[0].message.content
+    print(f"Assistant: {assistant_response}\n")
+    
+    system_state["conversation_history"].append({
+        "role": "assistant",
+        "content": assistant_response
+    })</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-9">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">rich.console</span> <span class="kn">import</span> <span class="n">Console</span>
+<span class="kn">from</span> <span class="nn">rich.text</span> <span class="kn">import</span> <span class="n">Text</span>
+
+<span class="n">console</span> <span class="o">=</span> <span class="n">Console</span><span class="p">()</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-9">from rich.console import Console
+from rich.text import Text
+
+console = Console()</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-10">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">colors</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"system"</span><span class="p">:</span> <span class="s2">"green"</span><span class="p">,</span>
+    <span class="s2">"user"</span><span class="p">:</span> <span class="s2">"cyan"</span><span class="p">,</span>
+    <span class="s2">"assistant"</span><span class="p">:</span> <span class="s2">"magenta"</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="n">message</span> <span class="ow">in</span> <span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]:</span>
+    <span class="n">role</span> <span class="o">=</span> <span class="n">message</span><span class="p">[</span><span class="s2">"role"</span><span class="p">]</span>
+    <span class="n">content</span> <span class="o">=</span> <span class="n">message</span><span class="p">[</span><span class="s2">"content"</span><span class="p">]</span>
+    <span class="n">color</span> <span class="o">=</span> <span class="n">colors</span><span class="p">[</span><span class="n">role</span><span class="p">]</span>
+    <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"[</span><span class="si">{</span><span class="n">color</span><span class="si">}</span><span class="s2">]</span><span class="si">{</span><span class="n">role</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">content</span><span class="si">}</span><span class="s2">[/</span><span class="si">{</span><span class="n">color</span><span class="si">}</span><span class="s2">]"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-10">colors = {
+    "system": "green",
+    "user": "cyan",
+    "assistant": "magenta"
+}
+
+for message in system_state["conversation_history"]:
+    role = message["role"]
+    content = message["content"]
+    color = colors[role]
+    console.print(f"[{color}]{role.upper()}: {content}[/{color}]")</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008000; text-decoration-color: #008000">SYSTEM: You are a helpful philosophical assistant. You will help me think about philosophical questions. Please </span>
+<span style="color: #008000; text-decoration-color: #008000">keep your answers concise and to the point.</span>
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080">USER: What is the meaning of life?</span>
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #800080; text-decoration-color: #800080">ASSISTANT: The meaning of life is a deeply personal and subjective question. Some philosophical perspectives </span>
+<span style="color: #800080; text-decoration-color: #800080">suggest it's about seeking happiness, fulfilling potential, or contributing to others. Existentialists argue it’s </span>
+<span style="color: #800080; text-decoration-color: #800080">up to each individual to create their own meaning. Others find purpose in spiritual beliefs or connections with </span>
+<span style="color: #800080; text-decoration-color: #800080">nature. Ultimately, it varies for each person based on their values, experiences, and beliefs.</span>
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080">USER: Can you tell me more about point </span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span><span style="color: #008080; text-decoration-color: #008080">?</span>
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #800080; text-decoration-color: #800080">ASSISTANT: Certainly! The idea of seeking happiness as the meaning of life is central to various philosophical </span>
+<span style="color: #800080; text-decoration-color: #800080">traditions, particularly hedonism and utilitarianism. Here are some key points:</span>
+
+<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">1</span><span style="color: #800080; text-decoration-color: #800080">. **Hedonism**: This school of thought posits that pleasure and the avoidance of pain are the highest goods. </span>
+<span style="color: #800080; text-decoration-color: #800080">According to hedonists, a fulfilling life is one that maximizes pleasure and minimizes suffering.</span>
+
+<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">2</span><span style="color: #800080; text-decoration-color: #800080">. **Utilitarianism**: Proposed by philosophers like Jeremy Bentham and John Stuart Mill, utilitarianism expands on</span>
+<span style="color: #800080; text-decoration-color: #800080">hedonism by suggesting that the right action is the one that produces the greatest overall happiness for the </span>
+<span style="color: #800080; text-decoration-color: #800080">greatest number of people. It emphasizes collective well-being.</span>
+
+<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">3</span><span style="color: #800080; text-decoration-color: #800080">. **Eudaimonia**: In Aristotelian ethics, eudaimonia is often translated as </span><span style="color: #800080; text-decoration-color: #800080">"flourishing"</span><span style="color: #800080; text-decoration-color: #800080"> or </span><span style="color: #800080; text-decoration-color: #800080">"well-being."</span><span style="color: #800080; text-decoration-color: #800080"> </span>
+<span style="color: #800080; text-decoration-color: #800080">Aristotle argues that a meaningful life involves fulfilling one's potential through virtuous actions, intellectual </span>
+<span style="color: #800080; text-decoration-color: #800080">growth, and community engagement.</span>
+
+<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">4</span><span style="color: #800080; text-decoration-color: #800080">. **Positive Psychology**: This modern psychological approach studies well-being and happiness, emphasizing </span>
+<span style="color: #800080; text-decoration-color: #800080">factors like relationships, purpose, and personal strengths as keys to a meaningful life.</span>
+
+<span style="color: #800080; text-decoration-color: #800080">Overall, pursuing happiness as a guiding principle encourages individuals to reflect on their desires, values, and </span>
+<span style="color: #800080; text-decoration-color: #800080">the impacts of their actions on themselves and others.</span>
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080">USER: That second one sounds interesting. Tell me more about those two people.</span>
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #800080; text-decoration-color: #800080">ASSISTANT: Certainly! Here’s a brief overview of Jeremy Bentham and John Stuart Mill, two key figures in </span>
+<span style="color: #800080; text-decoration-color: #800080">utilitarianism:</span>
+
+<span style="color: #800080; text-decoration-color: #800080">### Jeremy Bentham </span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">(</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">1748</span><span style="color: #800080; text-decoration-color: #800080">–</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">1832</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">)</span>
+<span style="color: #800080; text-decoration-color: #800080">- **Founder of Utilitarianism**: Bentham is often considered the father of utilitarianism. He introduced the idea </span>
+<span style="color: #800080; text-decoration-color: #800080">that the moral worth of an action is determined by its contribution to overall happiness or pleasure.</span>
+<span style="color: #800080; text-decoration-color: #800080">- **Principle of Utility**: He formulated the </span><span style="color: #800080; text-decoration-color: #800080">"greatest happiness principle,"</span><span style="color: #800080; text-decoration-color: #800080"> stating that the best action is the </span>
+<span style="color: #800080; text-decoration-color: #800080">one that produces the most happiness for the greatest number of people.</span>
+<span style="color: #800080; text-decoration-color: #800080">- **Hedonic Calculus**: Bentham proposed a method to evaluate the moral rightness of actions based on their </span>
+<span style="color: #800080; text-decoration-color: #800080">consequences, which he termed the </span><span style="color: #800080; text-decoration-color: #800080">"hedonic calculus."</span><span style="color: #800080; text-decoration-color: #800080"> This involves measuring factors like intensity, duration, </span>
+<span style="color: #800080; text-decoration-color: #800080">certainty, and proximity of pleasure or pain.</span>
+<span style="color: #800080; text-decoration-color: #800080">- **Reformist Ideas**: Bentham was also an advocate for social reforms, including legal changes to improve justice,</span>
+<span style="color: #800080; text-decoration-color: #800080">education, and animal rights.</span>
+
+<span style="color: #800080; text-decoration-color: #800080">### John Stuart Mill </span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">(</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">1806</span><span style="color: #800080; text-decoration-color: #800080">–</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">1873</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">)</span>
+<span style="color: #800080; text-decoration-color: #800080">- **Advancement of Utilitarianism**: Mill expanded on Bentham's ideas, refining the concept of utility and </span>
+<span style="color: #800080; text-decoration-color: #800080">addressing some of its criticisms.</span>
+<span style="color: #800080; text-decoration-color: #800080">- **Qualitative Distinction**: Mill argued that not all pleasures are equal; he distinguished between higher </span>
+<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">(</span><span style="color: #800080; text-decoration-color: #800080">intellectual and moral</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">)</span><span style="color: #800080; text-decoration-color: #800080"> and lower </span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">(</span><span style="color: #800080; text-decoration-color: #800080">bodily</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">)</span><span style="color: #800080; text-decoration-color: #800080"> pleasures. He believed higher pleasures lead to more profound happiness</span>
+<span style="color: #800080; text-decoration-color: #800080">and should be prioritized.</span>
+<span style="color: #800080; text-decoration-color: #800080">- **Liberty and Individual Rights**: In his famous work </span><span style="color: #800080; text-decoration-color: #800080">"On Liberty,"</span><span style="color: #800080; text-decoration-color: #800080"> Mill emphasized the importance of personal </span>
+<span style="color: #800080; text-decoration-color: #800080">freedom and autonomy, asserting that individuals should have the right to pursue their own happiness, provided it </span>
+<span style="color: #800080; text-decoration-color: #800080">does not harm others.</span>
+<span style="color: #800080; text-decoration-color: #800080">- **Feminism and Social Issues**: Mill was also an early advocate for women's rights, notably in his work </span><span style="color: #800080; text-decoration-color: #800080">"The </span>
+<span style="color: #800080; text-decoration-color: #800080">Subjection of Women,"</span><span style="color: #800080; text-decoration-color: #800080"> arguing for equality and the importance of women's contributions to society.</span>
+
+<span style="color: #800080; text-decoration-color: #800080">Both Bentham and Mill have had a lasting influence on ethics, politics, and social reform, shaping discussions </span>
+<span style="color: #800080; text-decoration-color: #800080">around moral philosophy and the pursuit of happiness.</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="tracking-tokens">Tracking tokens<a class="anchor-link" href="#tracking-tokens">¶</a></h2><p>We should probably also track the tokens that we are using so we can track costs. We can then start to cut off conversation history when we get too close to our limit.</p>
+<p>Coming soon...</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 </div>
 </div>
 </div>
@@ -1944,7 +2006,7 @@ Overall, the figure provides insights into the critical dynamics and avalanche-l
               
                 
               
-              Thanks for your feedback! Help us improve this page by using our <a href="https://github.com/acceleratescience/large-language-models/issues/new/?title=[Feedback]+The%20OpenAI%20API+-+/2_open_ai/" target="_blank" rel="noopener">feedback form</a>.
+              Thanks for your feedback! Help us improve this page by using our <a href="https://github.com/acceleratescience/large-language-models/issues/new/?title=[Feedback]+States+-+/6_states/" target="_blank" rel="noopener">feedback form</a>.
             </div>
           
             <div data-md-value="0" hidden>
@@ -1952,7 +2014,7 @@ Overall, the figure provides insights into the critical dynamics and avalanche-l
               
                 
               
-              Thanks for your feedback! Help us improve this page by using our <a href="https://github.com/acceleratescience/large-language-models/issues/new/?title=[Feedback]+The%20OpenAI%20API+-+/2_open_ai/" target="_blank" rel="noopener">feedback form</a>.
+              Thanks for your feedback! Help us improve this page by using our <a href="https://github.com/acceleratescience/large-language-models/issues/new/?title=[Feedback]+States+-+/6_states/" target="_blank" rel="noopener">feedback form</a>.
             </div>
           
         </div>
@@ -1984,7 +2046,7 @@ Overall, the figure provides insights into the critical dynamics and avalanche-l
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../1_setting_up/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Setting up">
+          <a href="../5_pydantic/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Pydantic">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1994,27 +2056,11 @@ Overall, the figure provides insights into the critical dynamics and avalanche-l
                 Previous
               </span>
               <div class="md-ellipsis">
-                Setting up
+                Pydantic
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../prompting/3_prompting/" class="md-footer__link md-footer__link--next" aria-label="Next: Prompt Engineering">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Prompt Engineering
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
         
       </nav>
     

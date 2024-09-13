@@ -109,7 +109,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="https://docs.science.ai.cam.ac.uk/" title="Hands on LLM Workshop" class="md-header__button md-logo" aria-label="Hands on LLM Workshop" data-md-component="logo">
       
@@ -237,14 +239,8 @@
     
   </nav>
   
-</header>
     
-    <div class="md-container" data-md-component="container">
       
-      
-        
-          
-            
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
@@ -342,10 +338,33 @@
   
 
       
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../6_states/" class="md-tabs__link">
+        
+  
+    
+  
+  States
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
-          
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
         
       
       <main class="md-main" data-md-component="main">
@@ -362,7 +381,9 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://docs.science.ai.cam.ac.uk/" title="Hands on LLM Workshop" class="md-nav__button md-logo" aria-label="Hands on LLM Workshop" data-md-component="logo">
       
@@ -808,128 +829,32 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6_states/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    States
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
                 </div>
               </div>
             
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#chain-of-thought-cot" class="md-nav__link">
-    <span class="md-ellipsis">
-      Chain-of-Thought (CoT)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Chain-of-Thought (CoT)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#piagets-glass-of-water" class="md-nav__link">
-    <span class="md-ellipsis">
-      Piaget's Glass of Water
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#n-lions-living-in-harmony" class="md-nav__link">
-    <span class="md-ellipsis">
-      N Lions Living in Harmony
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#few-shot-prompting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Few-shot prompting
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Few-shot prompting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#an-aside" class="md-nav__link">
-    <span class="md-ellipsis">
-      An aside...
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#general-guidance-for-prompting" class="md-nav__link">
-    <span class="md-ellipsis">
-      General guidance for prompting
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="General guidance for prompting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#be-clear-and-specific" class="md-nav__link">
-    <span class="md-ellipsis">
-      Be clear and specific
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#be-concise" class="md-nav__link">
-    <span class="md-ellipsis">
-      Be concise
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
             
           
           
@@ -2611,7 +2536,7 @@ for haiku, target in tqdm(zipped):
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h4 id="be-clear-and-specific">Be clear and specific<a class="anchor-link" href="#be-clear-and-specific">¶</a></h4><p>The model is not a mind reader. Try and avoid ambiguity in your prompts. If you are asking a question, make sure it is clear what you are asking. If you are asking for a summary, make sure it is clear what you want a summary of. If you want code, make sure you specify language, arguments, returns, etc.</p>
 <h4 id="be-concise">Be concise<a class="anchor-link" href="#be-concise">¶</a></h4><p>LLMs suffer from a retrieval bias, where they tend to favour information at the beginning and ends of prompts. A well known test for LLMs is the <strong>needle in a haystack</strong> test. You take a document and bury an obscure fact or sentence within it. You then ask a question related to this sentence.</p>
-<p><img alt="needle-in-a-haystack" src="img/GPT_4_testing.png"/></p>
+<p><img alt="needle-in-a-haystack" src="../../imgs/GPT_4_testing.png"/></p>
 </div>
 </div>
 </div>
@@ -2851,7 +2776,7 @@ for haiku, target in tqdm(zipped):
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.integrate", "search.suggest", "search.highlight", "announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>

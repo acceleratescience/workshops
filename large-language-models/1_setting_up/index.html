@@ -109,7 +109,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="https://docs.science.ai.cam.ac.uk/" title="Hands on LLM Workshop" class="md-header__button md-logo" aria-label="Hands on LLM Workshop" data-md-component="logo">
       
@@ -237,14 +239,8 @@
     
   </nav>
   
-</header>
     
-    <div class="md-container" data-md-component="container">
       
-      
-        
-          
-            
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
@@ -342,10 +338,33 @@
   
 
       
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../6_states/" class="md-tabs__link">
+        
+  
+    
+  
+  States
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
-          
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
         
       
       <main class="md-main" data-md-component="main">
@@ -362,7 +381,9 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://docs.science.ai.cam.ac.uk/" title="Hands on LLM Workshop" class="md-nav__button md-logo" aria-label="Hands on LLM Workshop" data-md-component="logo">
       
@@ -586,6 +607,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Setting up RunPod and vLLM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connect-to-your-api-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connect to your API endpoint
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -731,56 +767,32 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6_states/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    States
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
                 </div>
               </div>
             
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#setting-up-your-environment" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setting up your environment
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setting-up-runpod-and-vllm" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setting up RunPod and vLLM
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
             
           
           
@@ -804,11 +816,59 @@
 <p>If you want to use OpenAI, you will need to create an API key. For this workshop, we will provide you with one. However, if you want to use your own open source models, then you can also do that. During the workshop, wherever possible, we will try and highlight the differences between using OpenAI and your own models.</p>
 <h2 id="setting-up-your-environment">Setting up your environment</h2>
 <p>For this workshop, since we're not really doing any heavy lifting, we can work entirely within Github Codespaces. If you want, you can also use any other IDE you like, such as VSCode, or Jupyter Notebooks.</p>
-<p>My advice would be to create a new repository on Github, and then create a codespace from that repository. You can then copy and past the <code>requirements-handson.txt</code> file into the repository, and run</p>
+<p>My advice would be to create a new repository on Github, and then create a codespace from that repository. You can then copy and past the <code>requirements-handson.txt</code> file into the repository, and install the dependencies. You can also copy and paste the <code>Handson</code> folder into your repository. This folder contains the code that we will run through in the workshop.</p>
 <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements-handson.txt
 </code></pre></div>
 <h2 id="setting-up-runpod-and-vllm">Setting up RunPod and vLLM</h2>
 <p>For this demonstration we will run <code>llama-3.1-8b</code> on a Nvidia A40 GPU. If you want to do this, you will need to set up a RunPod account, add a payment method, and deposit some credit. For RunPod, you pay by the hour.</p>
+<p><strong>1. Create a RunPod account</strong> Head to the <a href="https://www.runpod.io/">runpod website</a> and create an account.</p>
+<p><strong>2. Over to <code>Billing</code> and add some credit</strong> You can add a payment method and deposit any amount you like.</p>
+<p><strong>3. Gain access to Llama 3.1</strong> You will need to request access to the Llama 3.1 models. You can do this by heading over to the <a href="https://huggingface.co/meta-llama/Meta-Llama-3.1-8B">Hugging Face site</a>. You'll need to log in and request access. It's usually pretty quick, but it can take a day or two.</p>
+<p><strong>4. Create a RunPod Template</strong> Head to templates and add a new template. Fill out the details as shown below.</p>
+<p><img alt="RunPod Template" src="../imgs/template.png" /></p>
+<p>For the token you'll need to add a new Hugging Face API token. You can create one <a href="https://huggingface.co/settings/tokens">here</a>.</p>
+<p><img alt="RunPod Secret" src="../imgs/secret.png" /></p>
+<p><strong>5. Create a Pod</strong> Once your template has been set, you can create a Pod. Head to <code>Pods</code> and click <code>+ Deploy</code>. Select the Nvidia A40 and the Llama 3.1 template you created earlier. The pod will take a while to to start up, but when it does you should see something like the below image</p>
+<p><img alt="Connect Pod" src="../imgs/connect.png" /></p>
+<p>Hit <code>Connect</code> and then <code>Connect to HTTP Service [Port 8000]</code>. You will be directed to a confusing looking page that just says <code>{"detail":"Not Found"}</code>. Don't worry, this is normal. Copy the URL that is in the browser bar. This is your API endpoint.</p>
+<h3 id="connect-to-your-api-endpoint">Connect to your API endpoint</h3>
+<p>Now we can connect to our API endpoint. Fire up a Jupyter notebook, and try running the following, pasting in the URL you copied earlier.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">openai</span> <span class="kn">import</span> <span class="n">OpenAI</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="s2">&quot;meta-llama/Meta-Llama-3.1-8B-Instruct&quot;</span>
+<span class="n">base_url</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">ENTER</span> <span class="n">YOUR</span> <span class="n">URL</span> <span class="n">HERE</span><span class="o">&gt;</span>
+
+<span class="n">openai_api_key</span> <span class="o">=</span> <span class="s2">&quot;EMPTY&quot;</span>
+<span class="n">openai_api_base</span> <span class="o">=</span> <span class="n">base_url</span> <span class="o">+</span> <span class="s2">&quot;v1&quot;</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">OpenAI</span><span class="p">(</span>
+    <span class="n">api_key</span><span class="o">=</span><span class="n">openai_api_key</span><span class="p">,</span>
+    <span class="n">base_url</span><span class="o">=</span><span class="n">openai_api_base</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+<p>This sets up the client.</p>
+<div class="highlight"><pre><span></span><code><span class="n">system_prompt_base</span> <span class="o">=</span> <span class="s2">&quot;You are a helpful assistant.&quot;</span>
+
+<span class="n">completion</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+    <span class="n">model</span><span class="o">=</span><span class="n">model</span><span class="p">,</span>
+    <span class="n">messages</span><span class="o">=</span> <span class="p">[</span>
+            <span class="p">{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;system&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="n">system_prompt_base</span><span class="p">},</span>
+            <span class="p">{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;Hello, how are you?&quot;</span><span class="p">}</span>
+        <span class="p">],</span>
+    <span class="n">max_tokens</span><span class="o">=</span><span class="mi">256</span><span class="p">,</span>
+    <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">temperature</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span>
+    <span class="n">stop</span><span class="o">=</span><span class="s2">&quot;&lt;|eot_id|&gt;&quot;</span>
+<span class="p">)</span>
+
+<span class="c1"># completion.choices[0].message.content</span>
+
+<span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">completion</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">chunk</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">delta</span><span class="o">.</span><span class="n">content</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">chunk</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">delta</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>If you switch back to the RunPod terminal, you should see some activity showing throughput (the number of tokens per second).</p>
+<p>If you get any errors, the RunPod terminal is the best place to see what went wrong.</p>
+<p>You can switch out Llama 3.1 for any of the other <a href="https://docs.vllm.ai/en/latest/models/supported_models.html">models supported by vLLM</a>. Please note that not all of these models will have the same level of support. You might also find subtle differences. For example: the MistralAI models do not have an explicit system prompt; and some models have different context window limits that you may need to set manually in the RunPod template. If you are having trouble with a particular model, please feel free to ask for help.</p>
 
 
 
@@ -1026,7 +1086,7 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight", "announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["toc.integrate", "search.suggest", "search.highlight", "announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
