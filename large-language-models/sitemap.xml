@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+         <loc>https://docs.science.ai.cam.ac.uk/large-language-models/</loc>
+         <lastmod>2024-09-18</lastmod>
+    </url>
+    <url>
          <loc>https://docs.science.ai.cam.ac.uk/large-language-models/1_setting_up/</loc>
          <lastmod>2024-09-18</lastmod>
     </url>
@@ -18,10 +22,6 @@
     </url>
     <url>
          <loc>https://docs.science.ai.cam.ac.uk/large-language-models/notebook_example/</loc>
-         <lastmod>2024-09-18</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.science.ai.cam.ac.uk/large-language-models/Home/</loc>
          <lastmod>2024-09-18</lastmod>
     </url>
     <url>
