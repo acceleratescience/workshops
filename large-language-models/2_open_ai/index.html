@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../imgs/trace.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.35">
     
     
       
@@ -252,7 +252,7 @@
     
     
       <li class="md-tabs__item">
-        <a href=".." class="md-tabs__link">
+        <a href="../home/index.md" class="md-tabs__link">
           
   
     
@@ -417,10 +417,6 @@
     
       
         
-          
-        
-      
-        
       
         
       
@@ -441,24 +437,16 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          
-          <div class="md-nav__link md-nav__container">
-            <a href=".." class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Home
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
@@ -468,19 +456,17 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-            
-              
                 
   
   
   
   
     <li class="md-nav__item">
-      <a href="../Home/workshop/" class="md-nav__link">
+      <a href="../home/index.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    The Workshop
+    Welcome!
   </span>
   
 
@@ -497,7 +483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Home/LICENSE/" class="md-nav__link">
+      <a href="../home/LICENSE.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -518,7 +504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Home/about/" class="md-nav__link">
+      <a href="../home/about.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -612,11 +598,35 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-does-the-model-give-us" class="md-nav__link">
+  <a href="#chat-completions" class="md-nav__link">
     <span class="md-ellipsis">
-      What does the model give us?
+      Chat Completions
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Chat Completions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#available-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Available models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-response-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      The response object
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1240,11 +1250,17 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="the-openai-api">The OpenAI API<a class="anchor-link" href="#the-openai-api">¶</a></h1><p>The beauty of the OpenAI API is that is very simple to use.</p>
+<h1 id="the-openai-api">The OpenAI API<a class="anchor-link" href="#the-openai-api">¶</a></h1><p>In this section we will cover the basics of using the OpenAI API, including:</p>
+<ul>
+<li>Chat Completions</li>
+<li>Streaming</li>
+<li>Vision input</li>
+</ul>
+<p>The beauty of the OpenAI API is that is very simple to use.</p>
 <p>In your environment you should have a file called <code>.env</code> with the following:</p>
-<div class="highlight"><pre><span></span><span class="nv">OPENAI_API_KEY</span><span class="o">=</span>sk-proj-1234567890
+<div class="highlight"><pre><span></span><span class="nv">OPENAI_API_KEY</span><span class="o">=</span><span class="s2">"sk-proj-1234567890"</span>
 </pre></div>
-<p>We will give you this key in the workshop. <strong>The key will be deactivate after the workshop!</strong></p>
+<p>We will give you this key in the workshop. <strong>The key will be deactivated after the workshop!</strong></p>
 <p>You can then grab the key using python:</p>
 </div>
 </div>
@@ -1255,7 +1271,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [66]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [86]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-1">
@@ -1271,7 +1287,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">openai</span> <span class="kn">import</span> <span class="n">OpenAI</span>
 <span class="kn">import</span> <span class="nn">dotenv</span>
 <span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">from</span> <span class="nn">rich</span> <span class="kn">import</span> <span class="nb">print</span> <span class="k">as</span> <span class="n">rprint</span>
+<span class="kn">from</span> <span class="nn">rich</span> <span class="kn">import</span> <span class="nb">print</span> <span class="k">as</span> <span class="n">rprint</span> <span class="c1"># for making fancy outputs</span>
 
 <span class="n">dotenv</span><span class="o">.</span><span class="n">load_dotenv</span><span class="p">()</span>
 
@@ -1282,7 +1298,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="clipboard-copy-txt" id="cell-1">from openai import OpenAI
 import dotenv
 import os
-from rich import print as rprint
+from rich import print as rprint # for making fancy outputs
 
 dotenv.load_dotenv()
 
@@ -1291,6 +1307,17 @@ client = OpenAI()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")</div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="chat-completions">Chat Completions<a class="anchor-link" href="#chat-completions">¶</a></h2>
 </div>
 </div>
 </div>
@@ -1311,7 +1338,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [87]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-2">
@@ -1362,9 +1389,9 @@ print(response.choices[0].message.content)</div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Silent pawsteps glide,  
-Moonlight dances on the blade—  
-Feline honor blinds.  
+<pre>Silent paws tread soft,  
+Moonlight gleams on sharpened claws—  
+Honor in each pounce.  
 </pre>
 </div>
 </div>
@@ -1389,6 +1416,17 @@ Feline honor blinds.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="available-models">Available models<a class="anchor-link" href="#available-models">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Here we have used model <code>gpt-4o-mini</code>, but there are a range of models available.</p>
 </div>
 </div>
@@ -1399,7 +1437,7 @@ Feline honor blinds.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [85]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [88]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-3">
@@ -1428,37 +1466,37 @@ Feline honor blinds.
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Model(id='text-embedding-3-small', created=1705948997, object='model', owned_by='system')
-Model(id='tts-1-1106', created=1699053241, object='model', owned_by='system')
+<pre>Model(id='gpt-3.5-turbo', created=1677610602, object='model', owned_by='openai')
+Model(id='gpt-3.5-turbo-0125', created=1706048358, object='model', owned_by='system')
 Model(id='dall-e-2', created=1698798177, object='model', owned_by='system')
 Model(id='gpt-4-1106-preview', created=1698957206, object='model', owned_by='system')
-Model(id='tts-1', created=1681940951, object='model', owned_by='openai-internal')
 Model(id='tts-1-hd-1106', created=1699053533, object='model', owned_by='system')
 Model(id='tts-1-hd', created=1699046015, object='model', owned_by='system')
 Model(id='dall-e-3', created=1698785189, object='model', owned_by='system')
 Model(id='whisper-1', created=1677532384, object='model', owned_by='openai-internal')
-Model(id='text-embedding-ada-002', created=1671217299, object='model', owned_by='openai-internal')
 Model(id='text-embedding-3-large', created=1705953180, object='model', owned_by='system')
+Model(id='text-embedding-3-small', created=1705948997, object='model', owned_by='system')
+Model(id='text-embedding-ada-002', created=1671217299, object='model', owned_by='openai-internal')
 Model(id='gpt-4-turbo', created=1712361441, object='model', owned_by='system')
+Model(id='gpt-4o-2024-05-13', created=1715368132, object='model', owned_by='system')
 Model(id='gpt-4-0125-preview', created=1706037612, object='model', owned_by='system')
 Model(id='gpt-4-turbo-2024-04-09', created=1712601677, object='model', owned_by='system')
-Model(id='gpt-3.5-turbo', created=1677610602, object='model', owned_by='openai')
 Model(id='gpt-4-turbo-preview', created=1706037777, object='model', owned_by='system')
-Model(id='gpt-3.5-turbo-0125', created=1706048358, object='model', owned_by='system')
-Model(id='gpt-3.5-turbo-1106', created=1698959748, object='model', owned_by='system')
-Model(id='chatgpt-4o-latest', created=1723515131, object='model', owned_by='system')
 Model(id='gpt-3.5-turbo-16k', created=1683758102, object='model', owned_by='openai-internal')
+Model(id='gpt-4o', created=1715367049, object='model', owned_by='system')
+Model(id='tts-1', created=1681940951, object='model', owned_by='openai-internal')
+Model(id='gpt-3.5-turbo-1106', created=1698959748, object='model', owned_by='system')
+Model(id='tts-1-1106', created=1699053241, object='model', owned_by='system')
 Model(id='gpt-3.5-turbo-instruct-0914', created=1694122472, object='model', owned_by='system')
 Model(id='gpt-4', created=1687882411, object='model', owned_by='openai')
 Model(id='gpt-4-0613', created=1686588896, object='model', owned_by='openai')
 Model(id='gpt-3.5-turbo-instruct', created=1692901427, object='model', owned_by='system')
-Model(id='gpt-4o-2024-08-06', created=1722814719, object='model', owned_by='system')
+Model(id='chatgpt-4o-latest', created=1723515131, object='model', owned_by='system')
 Model(id='babbage-002', created=1692634615, object='model', owned_by='system')
 Model(id='davinci-002', created=1692634301, object='model', owned_by='system')
 Model(id='gpt-4o-mini-2024-07-18', created=1721172717, object='model', owned_by='system')
-Model(id='gpt-4o', created=1715367049, object='model', owned_by='system')
-Model(id='gpt-4o-2024-05-13', created=1715368132, object='model', owned_by='system')
 Model(id='gpt-4o-mini', created=1721172741, object='model', owned_by='system')
+Model(id='gpt-4o-2024-08-06', created=1722814719, object='model', owned_by='system')
 </pre>
 </div>
 </div>
@@ -1483,7 +1521,7 @@ Model(id='gpt-4o-mini', created=1721172741, object='model', owned_by='system')
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="what-does-the-model-give-us">What does the model give us?<a class="anchor-link" href="#what-does-the-model-give-us">¶</a></h3>
+<h3 id="the-response-object">The response object<a class="anchor-link" href="#the-response-object">¶</a></h3>
 </div>
 </div>
 </div>
@@ -1578,7 +1616,7 @@ Model(id='gpt-4o-mini', created=1721172741, object='model', owned_by='system')
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="streaming-a-response">Streaming a response<a class="anchor-link" href="#streaming-a-response">¶</a></h3><p>Streaming a response is mainly for user experience. It allows the user to see the response as it comes in, rather than waiting for the whole response to come in. For many applications, this might not be necessary.</p>
+<h2 id="streaming-a-response">Streaming a response<a class="anchor-link" href="#streaming-a-response">¶</a></h2><p>Streaming a response is mainly for user experience. It allows the user to see the response as it comes in, rather than waiting for the whole response to come in. For many applications, this might not be necessary.</p>
 </div>
 </div>
 </div>
@@ -1654,7 +1692,25 @@ Fierce heart, whiskers twitch.</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="vision-input">Vision input<a class="anchor-link" href="#vision-input">¶</a></h2><p>Let's try an example of inputting an image. First we need to look at the image:</p>
+<p>All this really does is create a streaming object, which acts like a generator. We can then print the chunk as it comes in.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="vision-input">Vision input<a class="anchor-link" href="#vision-input">¶</a></h2><p>A huge draw of OpenAI models is the ability to input vision data. This is useful for a wide range of applications, including:</p>
+<ul>
+<li>Image captioning</li>
+<li>Object detection</li>
+<li>Face recognition</li>
+<li>Image generation</li>
+</ul>
+<p>Let's try an example of inputting an image. First we need to look at the image:</p>
 <p><img alt="plot" src="../imgs/figure.jpeg"/></p>
 </div>
 </div>
@@ -1667,8 +1723,32 @@ Fierce heart, whiskers twitch.</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Here is the caption from this figure:</p>
+<table><tr><td>
 <p><strong>Fig. 2 Spatial and temporal self-similarity and correlation in switching activity.</strong></p>
 <p><em>(A) Percolating devices produce complex patterns of switching events that are self-similar in nature. The top panel contains 2400 s of data, with the bottom panels showing segments of the data with 10, 100, and 1000 times greater temporal magnification and with 3, 9, and 27 times greater magnification on the vertical scale (units of G0 = 2e2/h, the quantum of conductance, are used for convenience). The activity patterns appear qualitatively similar on multiple different time scales. (B and E) The probability density function (PDF) for changes in total network conductance, P(ΔG), resulting from switching activity exhibits heavy-tailed probability distributions. (C and F) IEIs follow power law distributions, suggestive of correlations between events. (D and G) Further evidence of temporal correlation between events is given by the autocorrelation function (ACF) of the switching activity (red), which decays as a power law over several decades. When the IEI sequence is shuffled (gray), the correlations between events are destroyed, resulting in a significant increase in slope in the ACF. The data shown in (B) to (D) (sample I) were obtained with our standard (slow) sampling rate, and the data shown in (E) to (G) (sample II) were measured 1000 times faster (see Materials and Methods), providing further evidence for self-similarity.</em></p>
+</td></tr></table>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>This figure is taken from <em><a href="https://www.science.org/doi/10.1126/sciadv.aaw8438">Avalanches and criticality in self-organized nanoscale networks, Mallinson et al., 2019.</a></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Now let's use the OpenAI vision model to generate a caption for this figure.</p>
 </div>
 </div>
 </div>
@@ -1678,7 +1758,7 @@ Fierce heart, whiskers twitch.</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [83]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [92]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-6">
@@ -1711,13 +1791,25 @@ Fierce heart, whiskers twitch.</pre>
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The process of calling a vision model is a little more involved, but OpenAI have a <a href="https://platform.openai.com/docs/guides/vision">convenient tutorial</a> on how to do this.</p>
+<p>Essentially we need to first convert the image to a base64 string. We can then pass this to the OpenAI API.</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [81]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [95]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-7">
@@ -1774,6 +1866,8 @@ Fierce heart, whiskers twitch.</pre>
   <span class="p">}</span>
 
   <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">"https://api.openai.com/v1/chat/completions"</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+
+  <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">'choices'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">'message'</span><span class="p">][</span><span class="s1">'content'</span><span class="p">]</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-7">import base64
 import requests
@@ -1818,7 +1912,9 @@ def get_image_caption(image_path, prompt):
     "max_tokens": 512
   }
 
-  response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)</div>
+  response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
+
+  return response.json()['choices'][0]['message']['content']</div>
 </div>
 </div>
 </div>
@@ -1830,7 +1926,7 @@ def get_image_caption(image_path, prompt):
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [82]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [96]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-8">
@@ -1843,9 +1939,11 @@ def get_image_caption(image_path, prompt):
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">'choices'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">'message'</span><span class="p">][</span><span class="s1">'content'</span><span class="p">])</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">caption</span> <span class="o">=</span> <span class="n">get_image_caption</span><span class="p">(</span><span class="n">image_path</span><span class="p">,</span> <span class="n">prompt</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">caption</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-8">print(response.json()['choices'][0]['message']['content'])</div>
+<div class="clipboard-copy-txt" id="cell-8">caption = get_image_caption(image_path, prompt)
+print(caption)</div>
 </div>
 </div>
 </div>
@@ -1857,20 +1955,19 @@ def get_image_caption(image_path, prompt):
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>### Figure Caption
+<pre>**Figure Caption:**
 
-**Figure: Dynamics of Self-Organized Nanoscale Networks**  
-This figure illustrates the characteristics of fluctuations and scaling behavior in self-organized nanoscale networks.
+**Figure X:** Analysis of avalanche dynamics and criticality in self-organized nanoscale networks. 
 
-**Panel A:** Time series data showing changes in conductance \((\Delta G)\) over various time scales. The four sub-panels depict fluctuations on different scales: the topmost trace spans 100 seconds, followed by traces at 10 seconds, 1 second, and 0.1 seconds, respectively.
+**(A)** Time series data showing the fluctuations in conductance, \(\Delta G(G_0)\), over varying observation periods (100 s, 10 s, 1 s, 0.1 s). The four panels illustrate distinct behavior and amplitude of fluctuations as time scales decrease. 
 
-**Panels B and E:** Probability distribution plots \(P(\Delta G)\) of the fluctuations, illustrating a power-law behavior. The fitted lines correspond to exponents \(\Delta G \approx -2.59\) (B) and \(\Delta G \approx -2.36\) (E), highlighting the heavy-tailed nature of the distributions.
+**(B) and (E)** Power law distributions, \(P(\Delta G)\), of the amplitude of conductance fluctuations are presented on logarithmic scales, revealing power-law exponents \(\Delta G \approx -2.59\) (B) and \(\Delta G \approx -2.36\) (E). 
 
-**Panels C and F:** Time distribution plots \(P(t)\) for the fluctuation events, demonstrating power-law scaling with exponents \(t \approx -1.39\) (C) and \(t \approx -1.30\) (F). 
+**(C) and (F)** Temporal distributions, \(P(t)\), showing the frequency of events over time. The corresponding power law exponents are \(t \approx -1.39\) (C) and \(t \approx -1.30\) (F), indicating scale-invariant behavior.
 
-**Panels D and G:** Temporal analysis of the fluctuations represented by \(A(t)\), with power-law fits showing exponents: \(t \approx -0.19\) and \(t \approx -0.23\) (D), and \(t \approx -0.66\) and \(t \approx -0.64\) (G), indicating complex time-dependent behaviors in the network's response. 
+**(D) and (G)** Characteristic avalanche sizes \(A(t)\) as a function of time, indicating distinct scaling regimes with exponents \(t \approx -0.19\) and \(t \approx -0.23\) for the upper and lower panels, respectively. The gray data in (D) suggests a crossover behavior in larger time scales. 
 
-Overall, the figure provides insights into the critical dynamics and avalanche-like behavior characterizing nanoscale networks.
+These results highlight the critical dynamics and self-organized behavior of the nanoscale networks under study.
 </pre>
 </div>
 </div>
@@ -1884,7 +1981,15 @@ Overall, the figure provides insights into the critical dynamics and avalanche-l
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>I mean, I don't know about you, but I think that's incredible.</p>
+<p>I mean, I don't know about you, but I think that's incredible. Let's consider what it has done:</p>
+<ul>
+<li>Correctly grouped the panels in the same way the real caption did.</li>
+<li>Provided information on the observation periods.</li>
+<li>Drawn out the important information, such as critical exponents.</li>
+<li>Made the link between power law distributions and scale-free behaviour.</li>
+</ul>
+<p>However, it has failed to provide information on temporal correlations, and it has not noticed the self-similarity in caption 1.</p>
+<p>But this is still quite impressive, and with more information we could potentially get some better captions. We will return to this later...</p>
 </div>
 </div>
 </div>
@@ -1895,7 +2000,6 @@ Overall, the figure provides insights into the critical dynamics and avalanche-l
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Now that we have the basics of using the OpenAI API, let's look at prompting.</p>
 </div>
 </div>
 </div>
@@ -2124,7 +2228,7 @@ Overall, the figure provides insights into the critical dynamics and avalanche-l
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["toc.integrate", "search.suggest", "search.highlight", "announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["toc.integrate", "search.suggest", "search.highlight", "announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>

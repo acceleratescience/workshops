@@ -11,14 +11,12 @@
         <link rel="canonical" href="https://docs.science.ai.cam.ac.uk/large-language-models/1_setting_up/">
       
       
-        <link rel="prev" href="../Home/about/">
-      
       
         <link rel="next" href="../2_open_ai/">
       
       
       <link rel="icon" href="../imgs/trace.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.35">
     
     
       
@@ -252,7 +250,7 @@
     
     
       <li class="md-tabs__item">
-        <a href=".." class="md-tabs__link">
+        <a href="../home/index.md" class="md-tabs__link">
           
   
     
@@ -417,10 +415,6 @@
     
       
         
-          
-        
-      
-        
       
         
       
@@ -441,24 +435,16 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          
-          <div class="md-nav__link md-nav__container">
-            <a href=".." class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Home
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
@@ -468,19 +454,17 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-            
-              
                 
   
   
   
   
     <li class="md-nav__item">
-      <a href="../Home/workshop/" class="md-nav__link">
+      <a href="../home/index.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    The Workshop
+    Welcome!
   </span>
   
 
@@ -497,7 +481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Home/LICENSE/" class="md-nav__link">
+      <a href="../home/LICENSE.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -518,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Home/about/" class="md-nav__link">
+      <a href="../home/about.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -819,6 +803,9 @@
 <p>My advice would be to create a new repository on Github, and then create a codespace from that repository. You can then copy and past the <code>requirements-handson.txt</code> file into the repository, and install the dependencies. You can also copy and paste the <code>Handson</code> folder into your repository. This folder contains the code that we will run through in the workshop.</p>
 <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements-handson.txt
 </code></pre></div>
+<p>You should also create a new file called <code>.env</code> and add your OpenAI API key to it.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">OPENAI_API_KEY</span><span class="o">=</span>&lt;YOUR_API_KEY&gt;
+</code></pre></div>
 <h2 id="setting-up-runpod-and-vllm">Setting up RunPod and vLLM</h2>
 <p>For this demonstration we will run <code>llama-3.1-8b</code> on a Nvidia A40 GPU. If you want to do this, you will need to set up a RunPod account, add a payment method, and deposit some credit. For RunPod, you pay by the hour.</p>
 <p><strong>1. Create a RunPod account</strong> Head to the <a href="https://www.runpod.io/">runpod website</a> and create an account.</p>
@@ -945,22 +932,6 @@
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
-          
-          <a href="../Home/about/" class="md-footer__link md-footer__link--prev" aria-label="Previous: About us">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              <div class="md-ellipsis">
-                About us
-              </div>
-            </div>
-          </a>
-        
         
           
           <a href="../2_open_ai/" class="md-footer__link md-footer__link--next" aria-label="Next: The OpenAI API">
@@ -1086,7 +1057,7 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["toc.integrate", "search.suggest", "search.highlight", "announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["toc.integrate", "search.suggest", "search.highlight", "announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>

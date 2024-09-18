@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../imgs/trace.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.35">
     
     
       
@@ -252,7 +252,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../.." class="md-tabs__link">
+        <a href="../../home/index.md" class="md-tabs__link">
           
   
     
@@ -417,10 +417,6 @@
     
       
         
-          
-        
-      
-        
       
         
       
@@ -441,24 +437,16 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../.." class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Home
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
@@ -468,19 +456,17 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-            
-              
                 
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../Home/workshop/" class="md-nav__link">
+      <a href="../../home/index.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    The Workshop
+    Welcome!
   </span>
   
 
@@ -497,7 +483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Home/LICENSE/" class="md-nav__link">
+      <a href="../../home/LICENSE.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -518,7 +504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Home/about/" class="md-nav__link">
+      <a href="../../home/about.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -704,11 +690,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#f-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      F-strings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#jinja2" class="md-nav__link">
     <span class="md-ellipsis">
       Jinja2
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Jinja2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#haiku-checker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Haiku Checker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caution" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔴 Caution❗
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1250,7 +1269,18 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>The code below creates a function that is essentially a prompt template using f-strings. You can then pass in a dictionary of values to fill in the blanks. The <code>chat_response</code> function's job is simply to take the prompt as input and print the response. The <code>chain</code> function is used to chain the prompt and the response together.</p>
+<h2 id="f-strings">F-strings<a class="anchor-link" href="#f-strings">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The code below creates a function that is essentially a prompt template using <a href="https://docs.python.org/3/tutorial/inputoutput.html">f-strings</a>. You can then pass in a dictionary of values to fill in the blanks. The <code>chat_response</code> function's job is simply to take the prompt as input and print the response. The <code>chain</code> function is used to chain the prompt and the response together.</p>
 </div>
 </div>
 </div>
@@ -1489,7 +1519,7 @@ Fierce heart, purring peace.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="jinja2">Jinja2<a class="anchor-link" href="#jinja2">¶</a></h3>
+<h2 id="jinja2">Jinja2<a class="anchor-link" href="#jinja2">¶</a></h2>
 </div>
 </div>
 </div>
@@ -1775,6 +1805,17 @@ Honor's whiskered grace.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="haiku-checker">Haiku Checker<a class="anchor-link" href="#haiku-checker">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>The importance of metrics cannot be overstated here, so we will quickly demonstrate how we can use a simple metric to assess performance. Fortunately, we know that the structure of Haiku poems is quite rigid:</p>
 <ul>
 <li>Every Haiku has 3 lines</li>
@@ -2027,7 +2068,19 @@ On the high seas sings.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Again, some of these may not be correct, and that is because counting syllables is not easy...maybe we can get an LLM to do it...</p>
+<p>Again, some of these may not be correct, and that is because counting syllables is not easy.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="caution">🔴 <strong>Caution</strong>❗<a class="anchor-link" href="#caution">¶</a></h3><p>At this point, it is worth pointing out the challenge of metrics. Evaluation is obviously important - how do you know if your model is performing as intended? But working with LLMs is not not like working with traditional ML models, which have well established metrics. You will often have to find your own metrics, or create them bespoke to your use case. This is an active area of research in LLM evaluation, and there is no one size fits all solution.</p>
+<p>We advocate for evaluation driven LLM development - think about your metrics early and often, and build your systems with this in mind.</p>
 </div>
 </div>
 </div>
@@ -2256,7 +2309,7 @@ On the high seas sings.
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.integrate", "search.suggest", "search.highlight", "announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.integrate", "search.suggest", "search.highlight", "announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
