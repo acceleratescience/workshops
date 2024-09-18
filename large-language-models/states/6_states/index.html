@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.science.ai.cam.ac.uk/large-language-models/prompting/4_prompt_templates/">
+        <link rel="canonical" href="https://docs.science.ai.cam.ac.uk/large-language-models/states/6_states/">
       
       
-        <link rel="prev" href="../3_prompting/">
+        <link rel="prev" href="../../5_pydantic/">
       
       
-        <link rel="next" href="../../5_pydantic/">
+        <link rel="next" href="../7_summary/">
       
       
       <link rel="icon" href="../../imgs/trace.svg">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Prompt Templates - Hands on LLM Workshop</title>
+        <title>Keeping track of information - Hands on LLM Workshop</title>
       
     
     
@@ -97,7 +97,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#prompt-templates" class="md-skip">
+        <a href="#keeping-track-of-information" class="md-skip">
           Skip to content
         </a>
       
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Prompt Templates
+              Keeping track of information
             
           </span>
         </div>
@@ -302,13 +302,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../3_prompting/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../prompting/3_prompting/" class="md-tabs__link">
           
   
     
@@ -341,11 +339,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../states/6_states/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
     
@@ -563,10 +563,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -577,22 +575,19 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -603,7 +598,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Prompting
@@ -617,7 +612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../3_prompting/" class="md-nav__link">
+      <a href="../../prompting/3_prompting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -635,30 +630,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Prompt Templates
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../prompting/4_prompt_templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -667,68 +642,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#f-strings" class="md-nav__link">
-    <span class="md-ellipsis">
-      F-strings
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#jinja2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Jinja2
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Jinja2">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#haiku-checker" class="md-nav__link">
-    <span class="md-ellipsis">
-      Haiku Checker
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#caution" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔴 Caution❗
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -765,8 +678,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -777,19 +692,22 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -800,7 +718,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             States
@@ -811,10 +729,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../states/6_states/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Keeping track of information
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -823,6 +761,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#conversation-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conversation History
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tracking-tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tracking tokens
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -835,7 +811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../states/7_summary/" class="md-nav__link">
+      <a href="../7_summary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1315,7 +1291,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="prompt-templates">Prompt Templates<a class="anchor-link" href="#prompt-templates">¶</a></h1>
+<h1 id="keeping-track-of-information">Keeping track of information<a class="anchor-link" href="#keeping-track-of-information">¶</a></h1><p>LLMs calls are inherently stateless - they do not have memory of any previous interactions. Every call is an independent event, and <strong>YOU</strong> must manage any information that needs to be carried over time.</p>
+<p>In this notebook we will look at a few different things that we might want to keep track of between calls.</p>
 </div>
 </div>
 </div>
@@ -1326,8 +1303,19 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>In order to assess the effectiveness of prompts later on, it helps to have a good way or storing and managing prompts.</p>
-<p>We could just use python f-strings.</p>
+<h2 id="conversation-history">Conversation History<a class="anchor-link" href="#conversation-history">¶</a></h2><p>Keeping track of the conversation history is actually easy. Firstly it is important to remember that LLMs often have the following pattern:</p>
+<pre><code>-&gt; system prompt
+-&gt; user prompt
+-&gt; model response
+
+-&gt; user prompt
+-&gt; model response
+
+-&gt; user prompt
+-&gt; model response
+
+-&gt; etc.
+</code></pre>
 </div>
 </div>
 </div>
@@ -1338,18 +1326,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="f-strings">F-strings<a class="anchor-link" href="#f-strings">¶</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>The code below creates a function that is essentially a prompt template using <a href="https://docs.python.org/3/tutorial/inputoutput.html">f-strings</a>. You can then pass in a dictionary of values to fill in the blanks. The <code>chat_response</code> function's job is simply to take the prompt as input and print the response. The <code>chain</code> function is used to chain the prompt and the response together.</p>
+<p>We actually saw an example of this in the prompting notebook when we looked at few-shot prompting.</p>
+<p>Here is a really simple example of how we can keep track of the conversation history. We can first define a <code>system_state</code> dictionary that will store important information for us. We can give it a <code>conversation_history</code> key that will store the conversation history.</p>
 </div>
 </div>
 </div>
@@ -1359,7 +1337,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-1">
@@ -1372,25 +1350,13 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">openai</span> <span class="kn">import</span> <span class="n">OpenAI</span>
-<span class="n">client</span> <span class="o">=</span> <span class="n">OpenAI</span><span class="p">()</span>
-
-<span class="kn">import</span> <span class="nn">dotenv</span>
-<span class="kn">import</span> <span class="nn">os</span>
-
-<span class="n">dotenv</span><span class="o">.</span><span class="n">load_dotenv</span><span class="p">()</span>
-
-<span class="n">OPENAI_API_KEY</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">"OPENAI_API_KEY"</span><span class="p">)</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">system_state</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"conversation_history"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-1">from openai import OpenAI
-client = OpenAI()
-
-import dotenv
-import os
-
-dotenv.load_dotenv()
-
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")</div>
+<div class="clipboard-copy-txt" id="cell-1">system_state = {
+    "conversation_history": []
+}</div>
 </div>
 </div>
 </div>
@@ -1415,113 +1381,41 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Any</span>
-
-<span class="k">def</span> <span class="nf">generate_prompt</span><span class="p">(</span><span class="n">args</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-    <span class="n">prompt</span> <span class="o">=</span> <span class="p">(</span>
-        <span class="sa">f</span><span class="s2">"You are a helpful and whimsical poetry assistant.</span><span class="se">\n</span><span class="s2">"</span>
-        <span class="sa">f</span><span class="s2">"Please generate a </span><span class="si">{</span><span class="n">args</span><span class="p">[</span><span class="s1">'length'</span><span class="p">]</span><span class="si">}</span><span class="s2"> poem in a </span><span class="si">{</span><span class="n">args</span><span class="p">[</span><span class="s1">'style'</span><span class="p">]</span><span class="si">}</span><span class="s2"> style "</span>
-        <span class="sa">f</span><span class="s2">"about a </span><span class="si">{</span><span class="n">args</span><span class="p">[</span><span class="s1">'theme'</span><span class="p">]</span><span class="si">}</span><span class="s2">.</span><span class="se">\n</span><span class="s2">"</span>
-    <span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">prompt</span>
-
-
-<span class="k">def</span> <span class="nf">chat_response</span><span class="p">(</span><span class="n">prompt</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="n">client</span> <span class="o">=</span> <span class="n">OpenAI</span><span class="p">()</span>
-    <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
-        <span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4o-mini"</span><span class="p">,</span>
-        <span class="n">messages</span><span class="o">=</span><span class="p">[</span>
-            <span class="p">{</span>
-                <span class="s2">"role"</span><span class="p">:</span> <span class="s2">"user"</span><span class="p">,</span> <span class="s2">"content"</span><span class="p">:</span> <span class="n">prompt</span>
-            <span class="p">}</span>
-        <span class="p">],</span>
-    <span class="p">)</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span>
-
-    <span class="k">return</span> <span class="n">response</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-2">from typing import Any
-
-def generate_prompt(args: dict[str, Any]) -&gt; str:
-    prompt = (
-        f"You are a helpful and whimsical poetry assistant.\n"
-        f"Please generate a {args['length']} poem in a {args['style']} style "
-        f"about a {args['theme']}.\n"
-    )
-
-    return prompt
-
-
-def chat_response(prompt: str) -&gt; None:
-    client = OpenAI()
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[
-            {
-                "role": "user", "content": prompt
-            }
-        ],
-    ).choices[0].message.content
-
-    return response</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-3">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">prompt</span> <span class="o">=</span> <span class="n">generate_prompt</span><span class="p">(</span>
-    <span class="p">{</span>
-        <span class="s2">"length"</span> <span class="p">:</span> <span class="s2">"short"</span><span class="p">,</span>
-        <span class="s2">"style"</span> <span class="p">:</span> <span class="s2">"Haiku"</span><span class="p">,</span>
-        <span class="s2">"theme"</span> <span class="p">:</span> <span class="s2">"Samurai cat"</span>
-    <span class="p">}</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">system_prompt</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">"You are a helpful philosophical assistant. "</span>
+    <span class="s2">"You will help me think about philosophical questions. "</span>
+    <span class="s2">"Please keep your answers concise and to the point."</span>
 <span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+<span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"role"</span><span class="p">:</span> <span class="s2">"system"</span><span class="p">,</span>
+    <span class="s2">"content"</span><span class="p">:</span> <span class="n">system_prompt</span>
+<span class="p">})</span>
+
+<span class="n">user_prompt</span> <span class="o">=</span> <span class="s2">"What is the meaning of life?"</span>
+
+<span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"role"</span><span class="p">:</span> <span class="s2">"user"</span><span class="p">,</span>
+    <span class="s2">"content"</span><span class="p">:</span> <span class="n">user_prompt</span>
+<span class="p">})</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-3">prompt = generate_prompt(
-    {
-        "length" : "short",
-        "style" : "Haiku",
-        "theme" : "Samurai cat"
-    }
+<div class="clipboard-copy-txt" id="cell-2">system_prompt = (
+    "You are a helpful philosophical assistant. "
+    "You will help me think about philosophical questions. "
+    "Please keep your answers concise and to the point."
 )
 
-print(prompt)</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>You are a helpful and whimsical poetry assistant.
-Please generate a short poem in a Haiku style about a Samurai cat.
+system_state["conversation_history"].append({
+    "role": "system",
+    "content": system_prompt
+})
 
-</pre>
+user_prompt = "What is the meaning of life?"
+
+system_state["conversation_history"].append({
+    "role": "user",
+    "content": user_prompt
+})</div>
 </div>
 </div>
 </div>
@@ -1536,7 +1430,7 @@ Please generate a short poem in a Haiku style about a Samurai cat.
 <div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-4">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-3">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -1546,9 +1440,11 @@ Please generate a short poem in a Haiku style about a Samurai cat.
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">chat_response</span><span class="p">(</span><span class="n">prompt</span><span class="p">))</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">for</span> <span class="n">message</span> <span class="ow">in</span> <span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">message</span><span class="p">[</span><span class="s1">'role'</span><span class="p">]</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">message</span><span class="p">[</span><span class="s1">'content'</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-4">print(chat_response(prompt))</div>
+<div class="clipboard-copy-txt" id="cell-3">for message in system_state["conversation_history"]:
+    print(f"{message['role']}: {message['content']}\n")</div>
 </div>
 </div>
 </div>
@@ -1560,9 +1456,10 @@ Please generate a short poem in a Haiku style about a Samurai cat.
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Silent whiskers twitch,  
-Moonlit blade in paws of grace,  
-Fierce heart, purring peace.
+<pre>system: You are a helpful philosophical assistant. You will help me think about philosophical questions. Please keep your answers concise and to the point.
+
+user: What is the meaning of life?
+
 </pre>
 </div>
 </div>
@@ -1576,46 +1473,7 @@ Fierce heart, purring peace.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>This is fine, but it helps to separate our prompts from the main code. This way we can take advantage of version control, and limit risks, such as accidentally changing prompts or leaking them to the public (prompts can be highly sought after IP).</p>
-<p>So instead, we will use a popular library called <code>jinja2</code>. This is a templating engine that allows us to separate our prompts from our code. We can then use the <code>jinja2</code> library to render our prompts at runtime.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="jinja2">Jinja2<a class="anchor-link" href="#jinja2">¶</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>The <a href="https://jinja.palletsprojects.com/en/3.1.x/api/#basics">rabbithole for Jinja2</a> goes deep, but here, we will primarily be using it for input templating. First, we create a separate folder for our prompts and create a new file called <code>poetry_prompt.jinja</code>:</p>
-<hr/>
-<pre><code>You are a helpful and whimsical poetry assistant.
-Please generate a {{ length }} poem in a {{ style }} style about a {{ theme }}.
-</code></pre>
-<hr/>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We write a function to render this prompt:</p>
+<p>Now we can use this conversation history to generate a response.</p>
 </div>
 </div>
 </div>
@@ -1625,7 +1483,54 @@ Please generate a {{ length }} poem in a {{ style }} style about a {{ theme }}.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-4">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">openai</span> <span class="kn">import</span> <span class="n">OpenAI</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">OpenAI</span><span class="p">()</span>
+
+<span class="kn">import</span> <span class="nn">dotenv</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="n">dotenv</span><span class="o">.</span><span class="n">load_dotenv</span><span class="p">()</span>
+
+<span class="n">OPENAI_API_KEY</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">"OPENAI_API_KEY"</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">rich.pretty</span> <span class="kn">import</span> <span class="n">pprint</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-4">from openai import OpenAI
+client = OpenAI()
+
+import dotenv
+import os
+
+dotenv.load_dotenv()
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+from rich.pretty import pprint</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-5">
@@ -1638,25 +1543,43 @@ Please generate a {{ length }} poem in a {{ style }} style about a {{ theme }}.
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">jinja2</span> <span class="kn">import</span> <span class="n">Environment</span><span class="p">,</span> <span class="n">FileSystemLoader</span><span class="p">,</span> <span class="n">select_autoescape</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+    <span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4o-mini"</span><span class="p">,</span>
+    <span class="n">messages</span><span class="o">=</span><span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">],</span>
+    <span class="n">max_tokens</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span>
+    <span class="n">temperature</span><span class="o">=</span><span class="mf">1.0</span>
+<span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">load_template</span><span class="p">(</span><span class="n">template_filepath</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">arguments</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-    <span class="n">env</span> <span class="o">=</span> <span class="n">Environment</span><span class="p">(</span>
-        <span class="n">loader</span><span class="o">=</span><span class="n">FileSystemLoader</span><span class="p">(</span><span class="n">searchpath</span><span class="o">=</span><span class="s1">'./'</span><span class="p">),</span>
-        <span class="n">autoescape</span><span class="o">=</span><span class="n">select_autoescape</span><span class="p">()</span>
-    <span class="p">)</span>
-    <span class="n">template</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">get_template</span><span class="p">(</span><span class="n">template_filepath</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">template</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="o">**</span><span class="n">arguments</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-5">from jinja2 import Environment, FileSystemLoader, select_autoescape
+<div class="clipboard-copy-txt" id="cell-5">response = client.chat.completions.create(
+    model="gpt-4o-mini",
+    messages=system_state["conversation_history"],
+    max_tokens=512,
+    temperature=1.0
+)
 
-def load_template(template_filepath: str, arguments: dict[str, Any]) -&gt; str:
-    env = Environment(
-        loader=FileSystemLoader(searchpath='./'),
-        autoescape=select_autoescape()
-    )
-    template = env.get_template(template_filepath)
-    return template.render(**arguments)</div>
+print(response.choices[0].message.content)</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>The meaning of life is a deeply personal and subjective question. Various philosophical, spiritual, and existential perspectives offer different answers: 
+
+1. **Existentialism** suggests that life has no inherent meaning, and individuals must create their own purpose.
+2. **Religious perspectives** often provide a framework where life's meaning is linked to a divine purpose or adherence to spiritual teachings.
+3. **Humanism** focuses on the meaning derived from human relationships, personal fulfillment, and contributing to the greater good.
+4. **Buddhism** emphasizes the pursuit of enlightenment and understanding the nature of suffering as key to a meaningful life.
+
+Ultimately, the meaning of life may depend on one's values, beliefs, and experiences.
+</pre>
 </div>
 </div>
 </div>
@@ -1669,18 +1592,7 @@ def load_template(template_filepath: str, arguments: dict[str, Any]) -&gt; str:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>The details of creating the <code>Environment</code> object and autoescaping are not important here, if you want to find out more about them check out the <a href="https://jinja.palletsprojects.com/en/3.0.x/api/">Jinja2 documentation</a>.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>If you've seen any LangChain prompt templates before, you'll recognize the way that we can pass in variables to the template:</p>
+<p>Great, but now what happens if I want to ask a follow up question? Without the conversation history?</p>
 </div>
 </div>
 </div>
@@ -1690,7 +1602,7 @@ def load_template(template_filepath: str, arguments: dict[str, Any]) -&gt; str:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-6">
@@ -1703,27 +1615,34 @@ def load_template(template_filepath: str, arguments: dict[str, Any]) -&gt; str:
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">prompt</span> <span class="o">=</span> <span class="n">load_template</span><span class="p">(</span>
-    <span class="s2">"prompts/poetry_prompt.jinja"</span><span class="p">,</span>
-    <span class="p">{</span>
-        <span class="s2">"length"</span><span class="p">:</span> <span class="s2">"short"</span><span class="p">,</span>
-        <span class="s2">"style"</span><span class="p">:</span> <span class="s2">"haiku"</span><span class="p">,</span>
-        <span class="s2">"theme"</span><span class="p">:</span> <span class="s2">"a Samurai cat"</span>
-    <span class="p">}</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">follow_up_prompt</span> <span class="o">=</span> <span class="s2">"Can you tell more about point 1?"</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+    <span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4o-mini"</span><span class="p">,</span>
+    <span class="n">messages</span><span class="o">=</span><span class="p">[{</span>
+        <span class="s2">"role"</span><span class="p">:</span> <span class="s2">"user"</span><span class="p">,</span>
+        <span class="s2">"content"</span><span class="p">:</span> <span class="n">follow_up_prompt</span>
+    <span class="p">}],</span>
+    <span class="n">max_tokens</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span>
+    <span class="n">temperature</span><span class="o">=</span><span class="mf">1.0</span>
 <span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-6">prompt = load_template(
-    "prompts/poetry_prompt.jinja",
-    {
-        "length": "short",
-        "style": "haiku",
-        "theme": "a Samurai cat"
-    }
+<div class="clipboard-copy-txt" id="cell-6">follow_up_prompt = "Can you tell more about point 1?"
+
+response = client.chat.completions.create(
+    model="gpt-4o-mini",
+    messages=[{
+        "role": "user",
+        "content": follow_up_prompt
+    }],
+    max_tokens=512,
+    temperature=1.0
 )
 
-print(prompt)</div>
+print(response.choices[0].message.content)
+</div>
 </div>
 </div>
 </div>
@@ -1735,8 +1654,7 @@ print(prompt)</div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>You are a helpful and whimsical poetry assistant.
-Please generate a short poem in a haiku style about a a Samurai cat.
+<pre>Of course! However, I need more context to provide a detailed response. Could you please specify what "point 1" you are referring to? This could relate to a list, an article, or a particular topic. Let me know so I can assist you better!
 </pre>
 </div>
 </div>
@@ -1750,17 +1668,17 @@ Please generate a short poem in a haiku style about a a Samurai cat.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We can then feed this into our model as before.</p>
+<p>Obviously it has no memory of the previous conversation. So we just need to append the follow up prompt to the conversation history.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-7">
@@ -1773,45 +1691,76 @@ Please generate a short poem in a haiku style about a a Samurai cat.
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">chat_response</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-    <span class="n">client</span> <span class="o">=</span> <span class="n">OpenAI</span><span class="p">()</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+    <span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4o-mini"</span><span class="p">,</span>
+    <span class="n">messages</span><span class="o">=</span><span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">],</span>
+    <span class="n">max_tokens</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span>
+    <span class="n">temperature</span><span class="o">=</span><span class="mf">1.0</span>
+<span class="p">)</span>
 
-    <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
-        <span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4o-mini"</span><span class="p">,</span>
-        <span class="n">messages</span><span class="o">=</span><span class="p">[</span>
-            <span class="p">{</span>
-                <span class="s2">"role"</span><span class="p">:</span> <span class="s2">"user"</span><span class="p">,</span> <span class="s2">"content"</span><span class="p">:</span> <span class="n">prompt</span>
-            <span class="p">}</span>
-        <span class="p">],</span>
-    <span class="p">)</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span>
+<span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"role"</span><span class="p">:</span> <span class="s2">"assistant"</span><span class="p">,</span>
+    <span class="s2">"content"</span><span class="p">:</span> <span class="n">response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span>
+<span class="p">})</span>
 
-    <span class="k">return</span> <span class="n">response</span>
+<span class="k">for</span> <span class="n">message</span> <span class="ow">in</span> <span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">message</span><span class="p">[</span><span class="s1">'role'</span><span class="p">]</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">message</span><span class="p">[</span><span class="s1">'content'</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-7">def chat_response(prompt) -&gt; str:
-    client = OpenAI()
+<div class="clipboard-copy-txt" id="cell-7">response = client.chat.completions.create(
+    model="gpt-4o-mini",
+    messages=system_state["conversation_history"],
+    max_tokens=512,
+    temperature=1.0
+)
 
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[
-            {
-                "role": "user", "content": prompt
-            }
-        ],
-    ).choices[0].message.content
+system_state["conversation_history"].append({
+    "role": "assistant",
+    "content": response.choices[0].message.content
+})
 
-    return response</div>
+for message in system_state["conversation_history"]:
+    print(f"{message['role'].upper()}: {message['content']}\n")</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>SYSTEM: You are a helpful philosophical assistant. You will help me think about philosophical questions. Please keep your answers concise and to the point.
+
+USER: What is the meaning of life?
+
+ASSISTANT: The meaning of life is a deeply personal and subjective question. Some philosophical perspectives suggest it's about seeking happiness, fulfilling potential, or contributing to others. Existentialists argue it’s up to each individual to create their own meaning. Others find purpose in spiritual beliefs or connections with nature. Ultimately, it varies for each person based on their values, experiences, and beliefs.
+
+</pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>And now we can keep the conversation going in a simple loop. If you run this cell a few times you will see that the conversation history is correctly maintained.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-8">
@@ -1824,84 +1773,71 @@ Please generate a short poem in a haiku style about a a Samurai cat.
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">prompt</span> <span class="o">=</span> <span class="n">load_template</span><span class="p">(</span>
-    <span class="s2">"prompts/poetry_prompt.jinja"</span><span class="p">,</span>
-    <span class="p">{</span>
-        <span class="s2">"length"</span><span class="p">:</span> <span class="s2">"short"</span><span class="p">,</span>
-        <span class="s2">"style"</span><span class="p">:</span> <span class="s2">"haiku"</span><span class="p">,</span>
-        <span class="s2">"theme"</span><span class="p">:</span> <span class="s2">"Samurai cat"</span>
-    <span class="p">}</span>
-<span class="p">)</span>
-
-<span class="n">response</span> <span class="o">=</span> <span class="n">chat_response</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">user_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"You: "</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">user_input</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'exit'</span><span class="p">,</span> <span class="s1">'quit'</span><span class="p">,</span> <span class="s1">'bye'</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Assistant: Goodbye!"</span><span class="p">)</span>
+        <span class="k">break</span>
+    
+    <span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+        <span class="s2">"role"</span><span class="p">:</span> <span class="s2">"user"</span><span class="p">,</span>
+        <span class="s2">"content"</span><span class="p">:</span> <span class="n">user_input</span>
+    <span class="p">})</span>
+    
+    <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+        <span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4o-mini"</span><span class="p">,</span>
+        <span class="n">messages</span><span class="o">=</span><span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">],</span>
+        <span class="n">max_tokens</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span>
+        <span class="n">temperature</span><span class="o">=</span><span class="mf">1.0</span>
+    <span class="p">)</span>
+    
+    <span class="n">assistant_response</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Assistant: </span><span class="si">{</span><span class="n">assistant_response</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+    
+    <span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+        <span class="s2">"role"</span><span class="p">:</span> <span class="s2">"assistant"</span><span class="p">,</span>
+        <span class="s2">"content"</span><span class="p">:</span> <span class="n">assistant_response</span>
+    <span class="p">})</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-8">prompt = load_template(
-    "prompts/poetry_prompt.jinja",
-    {
-        "length": "short",
-        "style": "haiku",
-        "theme": "Samurai cat"
-    }
-)
-
-response = chat_response(prompt)
-print(response)</div>
+<div class="clipboard-copy-txt" id="cell-8">while True:
+    user_input = input("You: ")
+    
+    if user_input.lower() in ['exit', 'quit', 'bye']:
+        print("Assistant: Goodbye!")
+        break
+    
+    system_state["conversation_history"].append({
+        "role": "user",
+        "content": user_input
+    })
+    
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=system_state["conversation_history"],
+        max_tokens=512,
+        temperature=1.0
+    )
+    
+    assistant_response = response.choices[0].message.content
+    print(f"Assistant: {assistant_response}\n")
+    
+    system_state["conversation_history"].append({
+        "role": "assistant",
+        "content": assistant_response
+    })</div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Silent paws in dusk,  
-Moonlit blade in furrowed grass—  
-Honor's whiskered grace.  
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="haiku-checker">Haiku Checker<a class="anchor-link" href="#haiku-checker">¶</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>The importance of metrics cannot be overstated here, so we will quickly demonstrate how we can use a simple metric to assess performance. Fortunately, we know that the structure of Haiku poems is quite rigid:</p>
-<ul>
-<li>Every Haiku has 3 lines</li>
-<li>The lines have 5, 7, and 5 syllables respectively (17 phonetic <em>on</em>).</li>
-</ul>
-<p>Any Haiku expert will quickly be annoyed by this over simplification! Haiku also contain other features, such as a <em>kigo</em> (seasonal reference) and a <em>kireji</em> (cutting word), and traditional Haiku do not strictly adhere to this syllable structure (and in fact "syllables" is really a misnomer) but we'll keep things simple for now!</p>
-<p>We can first make sure that we have three lines, which is easy, and we can use the <code>pysyllables</code> library to count the number of syllables in each line of the poem. Counting syllables is actually quite a challenging problem, but <code>pysyllables</code> is a good start. Just be aware that it may not be perfect.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-9">
@@ -1914,102 +1850,27 @@ Honor's whiskered grace.
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">pysyllables</span> <span class="kn">import</span> <span class="n">get_syllable_count</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">rich.console</span> <span class="kn">import</span> <span class="n">Console</span>
+<span class="kn">from</span> <span class="nn">rich.text</span> <span class="kn">import</span> <span class="n">Text</span>
 
-<span class="k">def</span> <span class="nf">is_haiku</span><span class="p">(</span><span class="n">response</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
-    <span class="c1"># break into lines</span>
-    <span class="n">lines</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-
-    <span class="c1"># make sure it has 3 lines</span>
-    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span>
-        <span class="k">return</span> <span class="kc">False</span>
-
-    <span class="c1"># strip all whitespace and punctuation from each word</span>
-    <span class="n">lines</span> <span class="o">=</span> <span class="p">[[</span><span class="n">word</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">".,!?-:;—"</span><span class="p">)</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">]</span>
-
-    <span class="c1"># count syllables in each word</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="n">syllables</span> <span class="o">=</span> <span class="p">[</span><span class="nb">sum</span><span class="p">([</span><span class="n">get_syllable_count</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">line</span><span class="p">])</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">]</span>
-    <span class="k">except</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">"Error: could not count syllables due to missing word in dictionary"</span>
-
-    <span class="c1"># check if it has 5, 7, 5 syllables</span>
-    <span class="n">syllable_check</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">syllables</span><span class="p">)</span>
-
-    <span class="k">if</span> <span class="n">syllable_check</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
-        <span class="k">return</span> <span class="kc">True</span>
-    
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">syllables</span>
-
-<span class="n">is_haiku</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+<span class="n">console</span> <span class="o">=</span> <span class="n">Console</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-9">from pysyllables import get_syllable_count
-import numpy as np
+<div class="clipboard-copy-txt" id="cell-9">from rich.console import Console
+from rich.text import Text
 
-def is_haiku(response: str) -&gt; bool:
-    # break into lines
-    lines = response.split("\n")
-
-    # make sure it has 3 lines
-    if len(lines) != 3:
-        return False
-
-    # strip all whitespace and punctuation from each word
-    lines = [[word.strip(".,!?-:;—") for word in line.split()] for line in lines]
-
-    # count syllables in each word
-    try:
-        syllables = [sum([get_syllable_count(word) for word in line]) for line in lines]
-    except:
-        return "Error: could not count syllables due to missing word in dictionary"
-
-    # check if it has 5, 7, 5 syllables
-    syllable_check = np.array([5, 7, 5]) == np.array(syllables)
-
-    if syllable_check.all():
-        return True
-    
-    else:
-        return syllables
-
-is_haiku(response)</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>True</pre>
+console = Console()</div>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>For the example given above, if we count the syllables in each line, it is indeed a Haiku, and our function confirms this. Here is a function that will take a list of themes for the Haiku, and generate a Haiku for each theme:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-10">
@@ -2022,77 +1883,29 @@ is_haiku(response)</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">haiku_check</span><span class="p">(</span><span class="n">themes</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">bool</span><span class="p">]]:</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">colors</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"system"</span><span class="p">:</span> <span class="s2">"green"</span><span class="p">,</span>
+    <span class="s2">"user"</span><span class="p">:</span> <span class="s2">"cyan"</span><span class="p">,</span>
+    <span class="s2">"assistant"</span><span class="p">:</span> <span class="s2">"magenta"</span>
+<span class="p">}</span>
 
-    <span class="n">responses</span> <span class="o">=</span> <span class="p">[]</span>
-
-    <span class="k">for</span> <span class="n">theme</span> <span class="ow">in</span> <span class="n">themes</span><span class="p">:</span>
-        <span class="n">prompt</span> <span class="o">=</span> <span class="n">load_template</span><span class="p">(</span>
-            <span class="s2">"prompts/poetry_prompt.jinja"</span><span class="p">,</span>
-            <span class="p">{</span>
-                <span class="s2">"length"</span><span class="p">:</span> <span class="s2">"short"</span><span class="p">,</span>
-                <span class="s2">"style"</span><span class="p">:</span> <span class="s2">"haiku"</span><span class="p">,</span>
-                <span class="s2">"theme"</span><span class="p">:</span> <span class="n">theme</span>
-            <span class="p">}</span>
-        <span class="p">)</span>
-
-        <span class="n">response</span> <span class="o">=</span> <span class="n">chat_response</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
-        <span class="n">responses</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">response</span><span class="p">,</span> <span class="n">is_haiku</span><span class="p">(</span><span class="n">response</span><span class="p">)))</span>
-
-    <span class="k">return</span> <span class="n">responses</span>
+<span class="k">for</span> <span class="n">message</span> <span class="ow">in</span> <span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]:</span>
+    <span class="n">role</span> <span class="o">=</span> <span class="n">message</span><span class="p">[</span><span class="s2">"role"</span><span class="p">]</span>
+    <span class="n">content</span> <span class="o">=</span> <span class="n">message</span><span class="p">[</span><span class="s2">"content"</span><span class="p">]</span>
+    <span class="n">color</span> <span class="o">=</span> <span class="n">colors</span><span class="p">[</span><span class="n">role</span><span class="p">]</span>
+    <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"[</span><span class="si">{</span><span class="n">color</span><span class="si">}</span><span class="s2">]</span><span class="si">{</span><span class="n">role</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">content</span><span class="si">}</span><span class="s2">[/</span><span class="si">{</span><span class="n">color</span><span class="si">}</span><span class="s2">]"</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-10">def haiku_check(themes: list[str]) -&gt; list[tuple[str, bool]]:
+<div class="clipboard-copy-txt" id="cell-10">colors = {
+    "system": "green",
+    "user": "cyan",
+    "assistant": "magenta"
+}
 
-    responses = []
-
-    for theme in themes:
-        prompt = load_template(
-            "prompts/poetry_prompt.jinja",
-            {
-                "length": "short",
-                "style": "haiku",
-                "theme": theme
-            }
-        )
-
-        response = chat_response(prompt)
-        responses.append((response, is_haiku(response)))
-
-    return responses
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-11">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">for</span> <span class="n">response</span><span class="p">,</span> <span class="n">check</span> <span class="ow">in</span> <span class="n">haiku_check</span><span class="p">(</span><span class="n">themes</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"a Samurai dog"</span><span class="p">,</span> <span class="s2">"a Kung Fu panda"</span><span class="p">,</span> <span class="s2">"a Ninja squirrel"</span><span class="p">,</span> <span class="s2">"a Pirate monkey"</span><span class="p">]):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">check</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"-"</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-11">for response, check in haiku_check(themes = ["a Samurai dog", "a Kung Fu panda", "a Ninja squirrel", "a Pirate monkey"]):
-    print(response)
-    print(check)
-    print("-"*10)</div>
+for message in system_state["conversation_history"]:
+    role = message["role"]
+    content = message["content"]
+    color = colors[role]
+    console.print(f"[{color}]{role.upper()}: {content}[/{color}]")</div>
 </div>
 </div>
 </div>
@@ -2103,27 +1916,99 @@ is_haiku(response)</div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Fur like fallen leaves,  
-In armor of dreams he stands,  
-Honor in each paw.  
-True
-----------
-Panda leaps with grace,  
-Dreams of warriors awake,  
-Strength in every face.  
-[5, 7, 6]
-----------
-Silent in the trees,  
-Ninja squirrel leaps with grace,  
-Shadow in the breeze.  
-True
-----------
-Pirate monkey swings,  
-A treasure chest of bananas,  
-On the high seas sings.
-[5, 8, 5]
-----------
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008000; text-decoration-color: #008000">SYSTEM: You are a helpful philosophical assistant. You will help me think about philosophical questions. Please </span>
+<span style="color: #008000; text-decoration-color: #008000">keep your answers concise and to the point.</span>
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080">USER: What is the meaning of life?</span>
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #800080; text-decoration-color: #800080">ASSISTANT: The meaning of life is a deeply personal and subjective question. Some philosophical perspectives </span>
+<span style="color: #800080; text-decoration-color: #800080">suggest it's about seeking happiness, fulfilling potential, or contributing to others. Existentialists argue it’s </span>
+<span style="color: #800080; text-decoration-color: #800080">up to each individual to create their own meaning. Others find purpose in spiritual beliefs or connections with </span>
+<span style="color: #800080; text-decoration-color: #800080">nature. Ultimately, it varies for each person based on their values, experiences, and beliefs.</span>
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080">USER: Can you tell me more about point </span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span><span style="color: #008080; text-decoration-color: #008080">?</span>
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #800080; text-decoration-color: #800080">ASSISTANT: Certainly! The idea of seeking happiness as the meaning of life is central to various philosophical </span>
+<span style="color: #800080; text-decoration-color: #800080">traditions, particularly hedonism and utilitarianism. Here are some key points:</span>
+
+<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">1</span><span style="color: #800080; text-decoration-color: #800080">. **Hedonism**: This school of thought posits that pleasure and the avoidance of pain are the highest goods. </span>
+<span style="color: #800080; text-decoration-color: #800080">According to hedonists, a fulfilling life is one that maximizes pleasure and minimizes suffering.</span>
+
+<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">2</span><span style="color: #800080; text-decoration-color: #800080">. **Utilitarianism**: Proposed by philosophers like Jeremy Bentham and John Stuart Mill, utilitarianism expands on</span>
+<span style="color: #800080; text-decoration-color: #800080">hedonism by suggesting that the right action is the one that produces the greatest overall happiness for the </span>
+<span style="color: #800080; text-decoration-color: #800080">greatest number of people. It emphasizes collective well-being.</span>
+
+<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">3</span><span style="color: #800080; text-decoration-color: #800080">. **Eudaimonia**: In Aristotelian ethics, eudaimonia is often translated as </span><span style="color: #800080; text-decoration-color: #800080">"flourishing"</span><span style="color: #800080; text-decoration-color: #800080"> or </span><span style="color: #800080; text-decoration-color: #800080">"well-being."</span><span style="color: #800080; text-decoration-color: #800080"> </span>
+<span style="color: #800080; text-decoration-color: #800080">Aristotle argues that a meaningful life involves fulfilling one's potential through virtuous actions, intellectual </span>
+<span style="color: #800080; text-decoration-color: #800080">growth, and community engagement.</span>
+
+<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">4</span><span style="color: #800080; text-decoration-color: #800080">. **Positive Psychology**: This modern psychological approach studies well-being and happiness, emphasizing </span>
+<span style="color: #800080; text-decoration-color: #800080">factors like relationships, purpose, and personal strengths as keys to a meaningful life.</span>
+
+<span style="color: #800080; text-decoration-color: #800080">Overall, pursuing happiness as a guiding principle encourages individuals to reflect on their desires, values, and </span>
+<span style="color: #800080; text-decoration-color: #800080">the impacts of their actions on themselves and others.</span>
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080">USER: That second one sounds interesting. Tell me more about those two people.</span>
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #800080; text-decoration-color: #800080">ASSISTANT: Certainly! Here’s a brief overview of Jeremy Bentham and John Stuart Mill, two key figures in </span>
+<span style="color: #800080; text-decoration-color: #800080">utilitarianism:</span>
+
+<span style="color: #800080; text-decoration-color: #800080">### Jeremy Bentham </span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">(</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">1748</span><span style="color: #800080; text-decoration-color: #800080">–</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">1832</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">)</span>
+<span style="color: #800080; text-decoration-color: #800080">- **Founder of Utilitarianism**: Bentham is often considered the father of utilitarianism. He introduced the idea </span>
+<span style="color: #800080; text-decoration-color: #800080">that the moral worth of an action is determined by its contribution to overall happiness or pleasure.</span>
+<span style="color: #800080; text-decoration-color: #800080">- **Principle of Utility**: He formulated the </span><span style="color: #800080; text-decoration-color: #800080">"greatest happiness principle,"</span><span style="color: #800080; text-decoration-color: #800080"> stating that the best action is the </span>
+<span style="color: #800080; text-decoration-color: #800080">one that produces the most happiness for the greatest number of people.</span>
+<span style="color: #800080; text-decoration-color: #800080">- **Hedonic Calculus**: Bentham proposed a method to evaluate the moral rightness of actions based on their </span>
+<span style="color: #800080; text-decoration-color: #800080">consequences, which he termed the </span><span style="color: #800080; text-decoration-color: #800080">"hedonic calculus."</span><span style="color: #800080; text-decoration-color: #800080"> This involves measuring factors like intensity, duration, </span>
+<span style="color: #800080; text-decoration-color: #800080">certainty, and proximity of pleasure or pain.</span>
+<span style="color: #800080; text-decoration-color: #800080">- **Reformist Ideas**: Bentham was also an advocate for social reforms, including legal changes to improve justice,</span>
+<span style="color: #800080; text-decoration-color: #800080">education, and animal rights.</span>
+
+<span style="color: #800080; text-decoration-color: #800080">### John Stuart Mill </span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">(</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">1806</span><span style="color: #800080; text-decoration-color: #800080">–</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">1873</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">)</span>
+<span style="color: #800080; text-decoration-color: #800080">- **Advancement of Utilitarianism**: Mill expanded on Bentham's ideas, refining the concept of utility and </span>
+<span style="color: #800080; text-decoration-color: #800080">addressing some of its criticisms.</span>
+<span style="color: #800080; text-decoration-color: #800080">- **Qualitative Distinction**: Mill argued that not all pleasures are equal; he distinguished between higher </span>
+<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">(</span><span style="color: #800080; text-decoration-color: #800080">intellectual and moral</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">)</span><span style="color: #800080; text-decoration-color: #800080"> and lower </span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">(</span><span style="color: #800080; text-decoration-color: #800080">bodily</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">)</span><span style="color: #800080; text-decoration-color: #800080"> pleasures. He believed higher pleasures lead to more profound happiness</span>
+<span style="color: #800080; text-decoration-color: #800080">and should be prioritized.</span>
+<span style="color: #800080; text-decoration-color: #800080">- **Liberty and Individual Rights**: In his famous work </span><span style="color: #800080; text-decoration-color: #800080">"On Liberty,"</span><span style="color: #800080; text-decoration-color: #800080"> Mill emphasized the importance of personal </span>
+<span style="color: #800080; text-decoration-color: #800080">freedom and autonomy, asserting that individuals should have the right to pursue their own happiness, provided it </span>
+<span style="color: #800080; text-decoration-color: #800080">does not harm others.</span>
+<span style="color: #800080; text-decoration-color: #800080">- **Feminism and Social Issues**: Mill was also an early advocate for women's rights, notably in his work </span><span style="color: #800080; text-decoration-color: #800080">"The </span>
+<span style="color: #800080; text-decoration-color: #800080">Subjection of Women,"</span><span style="color: #800080; text-decoration-color: #800080"> arguing for equality and the importance of women's contributions to society.</span>
+
+<span style="color: #800080; text-decoration-color: #800080">Both Bentham and Mill have had a lasting influence on ethics, politics, and social reform, shaping discussions </span>
+<span style="color: #800080; text-decoration-color: #800080">around moral philosophy and the pursuit of happiness.</span>
 </pre>
 </div>
 </div>
@@ -2137,7 +2022,106 @@ On the high seas sings.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Again, some of these may not be correct, and that is because counting syllables is not easy.</p>
+<h2 id="tracking-tokens">Tracking tokens<a class="anchor-link" href="#tracking-tokens">¶</a></h2><p>We should probably also track the tokens. This can be useful for a few reasons - we can track costs, and we can use it to cut off conversation history when we get too close to our limit.</p>
+<p>We can make this as simple or complicated as we want. Probably we should create a <code>Conversation</code> class to keep track of things like this.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [114]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-11">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">class</span> <span class="nc">Conversation</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">system_prompt</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">system_prompt</span> <span class="o">=</span> <span class="n">system_prompt</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">history</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tokens</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">token_limit</span> <span class="o">=</span> <span class="mi">300</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">add_message</span><span class="p">(</span><span class="s2">"system"</span><span class="p">,</span> <span class="n">system_prompt</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">add_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">role</span><span class="p">,</span> <span class="n">content</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">history</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s2">"role"</span><span class="p">:</span> <span class="n">role</span><span class="p">,</span> <span class="s2">"content"</span><span class="p">:</span> <span class="n">content</span><span class="p">})</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tokens</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">check_token_limit</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">while</span> <span class="bp">self</span><span class="o">.</span><span class="n">tokens</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">token_limit</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">history</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="c1"># Remove the oldest non-system message</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">history</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s2">"role"</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">"system"</span><span class="p">:</span>
+                    <span class="n">removed_message</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">history</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">tokens</span> <span class="o">-=</span> <span class="nb">len</span><span class="p">(</span><span class="n">removed_message</span><span class="p">[</span><span class="s2">"content"</span><span class="p">])</span>
+                    <span class="k">break</span>
+
+    <span class="k">def</span> <span class="nf">response</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">user_input</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add_message</span><span class="p">(</span><span class="s2">"user"</span><span class="p">,</span> <span class="n">user_input</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">tokens</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">token_limit</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">check_token_limit</span><span class="p">()</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+            <span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4o-mini"</span><span class="p">,</span>
+            <span class="n">messages</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">history</span><span class="p">,</span>
+            <span class="n">max_tokens</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span>
+            <span class="n">temperature</span><span class="o">=</span><span class="mf">1.0</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">add_message</span><span class="p">(</span><span class="s2">"assistant"</span><span class="p">,</span> <span class="n">response</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">response</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-11">class Conversation:
+    def __init__(self, system_prompt):
+        self.system_prompt = system_prompt
+        self.history = []
+        self.tokens = 0
+        self.token_limit = 300
+
+        self.add_message("system", system_prompt)
+
+    def add_message(self, role, content):
+        self.history.append({"role": role, "content": content})
+        self.tokens += len(content)
+
+    def check_token_limit(self):
+        while self.tokens &gt; self.token_limit and len(self.history) &gt; 1:
+            # Remove the oldest non-system message
+            for i in range(1, len(self.history)):
+                if self.history[i]["role"] != "system":
+                    removed_message = self.history.pop(i)
+                    self.tokens -= len(removed_message["content"])
+                    break
+
+    def response(self, user_input):
+        self.add_message("user", user_input)
+        if self.tokens &gt; self.token_limit:
+            self.check_token_limit()
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=self.history,
+            max_tokens=512,
+            temperature=1.0
+        ).choices[0].message.content
+        
+        self.add_message("assistant", response)
+
+        return response
+                </div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -2148,8 +2132,258 @@ On the high seas sings.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="caution">🔴 <strong>Caution</strong>❗<a class="anchor-link" href="#caution">¶</a></h3><p>At this point, it is worth pointing out the challenge of metrics. Evaluation is obviously important - how do you know if your model is performing as intended? But working with LLMs is not not like working with traditional ML models, which have well established metrics. You will often have to find your own metrics, or create them bespoke to your use case. This is an active area of research in LLM evaluation, and there is no one size fits all solution.</p>
-<p>We advocate for evaluation driven LLM development - think about your metrics early and often, and build your systems with this in mind.</p>
+<p>Let's see how this works.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Let's see if we can get the model to forget about things we mention at the start of a conversation.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [119]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-12">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">conversation</span> <span class="o">=</span> <span class="n">Conversation</span><span class="p">(</span><span class="n">system_prompt</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-12">conversation = Conversation(system_prompt)</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [120]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-13">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">conversation</span><span class="o">.</span><span class="n">response</span><span class="p">(</span><span class="s2">"Hello, my name is Bob and I am 25 years old!"</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Tokens: </span><span class="si">{</span><span class="n">conversation</span><span class="o">.</span><span class="n">tokens</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-13">print(conversation.response("Hello, my name is Bob and I am 25 years old!"))
+print(f"Tokens: {conversation.tokens}")</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Hello, Bob! It's nice to meet you. What philosophical question or topic would you like to explore today?
+Tokens: 295
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [121]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-14">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">conversation</span><span class="o">.</span><span class="n">response</span><span class="p">(</span><span class="s2">"What is my name?"</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Tokens: </span><span class="si">{</span><span class="n">conversation</span><span class="o">.</span><span class="n">tokens</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-14">print(conversation.response("What is my name?"))
+print(f"Tokens: {conversation.tokens}")
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>You mentioned your name is Bob. How can I assist you further?
+Tokens: 328
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Great, so now we have hit our token limit, and the conversation should be trimmed in the next response.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [122]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-15">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">conversation</span><span class="o">.</span><span class="n">response</span><span class="p">(</span><span class="s2">"What is my age?"</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Tokens: </span><span class="si">{</span><span class="n">conversation</span><span class="o">.</span><span class="n">tokens</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-15">print(conversation.response("What is my age?"))
+print(f"Tokens: {conversation.tokens}")</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>I don't have access to personal information, so I can't know your age. You could share it if you'd like to discuss it further!
+Tokens: 365
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [123]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-16">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">pprint</span><span class="p">(</span><span class="n">conversation</span><span class="o">.</span><span class="n">history</span><span class="p">,</span> <span class="n">expand_all</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-16">pprint(conversation.history, expand_all=True)</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="font-weight: bold">[</span>
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="font-weight: bold">{</span>
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   │   </span><span style="color: #008000; text-decoration-color: #008000">'role'</span>: <span style="color: #008000; text-decoration-color: #008000">'system'</span>,
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   │   </span><span style="color: #008000; text-decoration-color: #008000">'content'</span>: <span style="color: #008000; text-decoration-color: #008000">'You are a helpful philosophical assistant. You will help me think about philosophical questions. Please keep your answers concise and to the point.'</span>
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="font-weight: bold">}</span>,
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="font-weight: bold">{</span>
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   │   </span><span style="color: #008000; text-decoration-color: #008000">'role'</span>: <span style="color: #008000; text-decoration-color: #008000">'user'</span>,
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   │   </span><span style="color: #008000; text-decoration-color: #008000">'content'</span>: <span style="color: #008000; text-decoration-color: #008000">'What is my name?'</span>
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="font-weight: bold">}</span>,
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="font-weight: bold">{</span>
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   │   </span><span style="color: #008000; text-decoration-color: #008000">'role'</span>: <span style="color: #008000; text-decoration-color: #008000">'assistant'</span>,
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   │   </span><span style="color: #008000; text-decoration-color: #008000">'content'</span>: <span style="color: #008000; text-decoration-color: #008000">'You mentioned your name is Bob. How can I assist you further?'</span>
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="font-weight: bold">}</span>,
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="font-weight: bold">{</span>
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   │   </span><span style="color: #008000; text-decoration-color: #008000">'role'</span>: <span style="color: #008000; text-decoration-color: #008000">'user'</span>,
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   │   </span><span style="color: #008000; text-decoration-color: #008000">'content'</span>: <span style="color: #008000; text-decoration-color: #008000">'What is my age?'</span>
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="font-weight: bold">}</span>,
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="font-weight: bold">{</span>
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   │   </span><span style="color: #008000; text-decoration-color: #008000">'role'</span>: <span style="color: #008000; text-decoration-color: #008000">'assistant'</span>,
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   │   </span><span style="color: #008000; text-decoration-color: #008000">'content'</span>: <span style="color: #008000; text-decoration-color: #008000">"I don't have access to personal information, so I can't know your age. You could share it if you'd like to discuss it further!"</span>
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="font-weight: bold">}</span>
+<span style="font-weight: bold">]</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>This is a good start, but there is a problem here. What if there was something very important that we wanted to keep track of that was mentioned at the start of the conversation, but it has been cut off!?</p>
 </div>
 </div>
 </div>
@@ -2198,7 +2432,7 @@ On the high seas sings.
               
                 
               
-              Thanks for your feedback! Help us improve this page by using our <a href="https://github.com/acceleratescience/large-language-models/issues/new/?title=[Feedback]+Prompt%20Templates+-+/prompting/4_prompt_templates/" target="_blank" rel="noopener">feedback form</a>.
+              Thanks for your feedback! Help us improve this page by using our <a href="https://github.com/acceleratescience/large-language-models/issues/new/?title=[Feedback]+Keeping%20track%20of%20information+-+/states/6_states/" target="_blank" rel="noopener">feedback form</a>.
             </div>
           
             <div data-md-value="0" hidden>
@@ -2206,7 +2440,7 @@ On the high seas sings.
               
                 
               
-              Thanks for your feedback! Help us improve this page by using our <a href="https://github.com/acceleratescience/large-language-models/issues/new/?title=[Feedback]+Prompt%20Templates+-+/prompting/4_prompt_templates/" target="_blank" rel="noopener">feedback form</a>.
+              Thanks for your feedback! Help us improve this page by using our <a href="https://github.com/acceleratescience/large-language-models/issues/new/?title=[Feedback]+Keeping%20track%20of%20information+-+/states/6_states/" target="_blank" rel="noopener">feedback form</a>.
             </div>
           
         </div>
@@ -2238,7 +2472,7 @@ On the high seas sings.
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../3_prompting/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Prompt Engineering">
+          <a href="../../5_pydantic/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Pydantic">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2248,20 +2482,20 @@ On the high seas sings.
                 Previous
               </span>
               <div class="md-ellipsis">
-                Prompt Engineering
+                Pydantic
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../5_pydantic/" class="md-footer__link md-footer__link--next" aria-label="Next: Pydantic">
+          <a href="../7_summary/" class="md-footer__link md-footer__link--next" aria-label="Next: Generating a Summary">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Pydantic
+                Generating a Summary
               </div>
             </div>
             <div class="md-footer__button md-icon">

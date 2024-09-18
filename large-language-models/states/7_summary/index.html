@@ -8,26 +8,26 @@
       
       
       
-        <link rel="canonical" href="https://docs.science.ai.cam.ac.uk/large-language-models/6_states/">
+        <link rel="canonical" href="https://docs.science.ai.cam.ac.uk/large-language-models/states/7_summary/">
       
       
-        <link rel="prev" href="../5_pydantic/">
+        <link rel="prev" href="../6_states/">
       
       
       
-      <link rel="icon" href="../imgs/trace.svg">
+      <link rel="icon" href="../../imgs/trace.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.35">
     
     
       
-        <title>States - Hands on LLM Workshop</title>
+        <title>Generating a Summary - Hands on LLM Workshop</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,11 +52,11 @@
       
     
     
-      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="../css/custom.css">
+      <link rel="stylesheet" href="../../css/custom.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#states" class="md-skip">
+        <a href="#generating-a-summary" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="https://docs.science.ai.cam.ac.uk/" title="Hands on LLM Workshop" class="md-header__button md-logo" aria-label="Hands on LLM Workshop" data-md-component="logo">
       
-  <img src="../imgs/trace.svg" alt="logo">
+  <img src="../../imgs/trace.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -130,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              States
+              Generating a Summary
             
           </span>
         </div>
@@ -250,7 +250,7 @@
     
     
       <li class="md-tabs__item">
-        <a href=".." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
     
@@ -268,7 +268,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../1_setting_up/" class="md-tabs__link">
+      <a href="../../1_setting_up/" class="md-tabs__link">
         
   
     
@@ -285,7 +285,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../2_open_ai/" class="md-tabs__link">
+      <a href="../../2_open_ai/" class="md-tabs__link">
         
   
     
@@ -304,7 +304,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../prompting/3_prompting/" class="md-tabs__link">
+        <a href="../../prompting/3_prompting/" class="md-tabs__link">
           
   
     
@@ -322,7 +322,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../5_pydantic/" class="md-tabs__link">
+      <a href="../../5_pydantic/" class="md-tabs__link">
         
   
     
@@ -340,16 +340,19 @@
     
   
   
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
-        
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../6_states/" class="md-tabs__link">
+          
   
     
   
   States
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -385,7 +388,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://docs.science.ai.cam.ac.uk/" title="Hands on LLM Workshop" class="md-nav__button md-logo" aria-label="Hands on LLM Workshop" data-md-component="logo">
       
-  <img src="../imgs/trace.svg" alt="logo">
+  <img src="../../imgs/trace.svg" alt="logo">
 
     </a>
     Hands on LLM Workshop
@@ -439,7 +442,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href=".." class="md-nav__link ">
+            <a href="../.." class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -472,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Home/LICENSE/" class="md-nav__link">
+      <a href="../../Home/LICENSE/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -493,7 +496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Home/about/" class="md-nav__link">
+      <a href="../../Home/about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -521,7 +524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../1_setting_up/" class="md-nav__link">
+      <a href="../../1_setting_up/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -541,7 +544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2_open_ai/" class="md-nav__link">
+      <a href="../../2_open_ai/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -607,7 +610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prompting/3_prompting/" class="md-nav__link">
+      <a href="../../prompting/3_prompting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -628,7 +631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prompting/4_prompt_templates/" class="md-nav__link">
+      <a href="../../prompting/4_prompt_templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -656,7 +659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../5_pydantic/" class="md-nav__link">
+      <a href="../../5_pydantic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -677,6 +680,78 @@
   
   
   
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    States
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            States
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6_states/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Keeping track of information
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
@@ -689,7 +764,7 @@
           
   
   <span class="md-ellipsis">
-    States
+    Generating a Summary
   </span>
   
 
@@ -700,7 +775,7 @@
         
   
   <span class="md-ellipsis">
-    States
+    Generating a Summary
   </span>
   
 
@@ -722,18 +797,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#conversation-history" class="md-nav__link">
+  <a href="#simple-summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Conversation History
+      Simple summary
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tracking-tokens" class="md-nav__link">
+  <a href="#adding-a-chatbot" class="md-nav__link">
     <span class="md-ellipsis">
-      Tracking tokens
+      Adding a chatbot
     </span>
   </a>
   
@@ -742,6 +817,14 @@
     </ul>
   
 </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -1206,8 +1289,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="states">States<a class="anchor-link" href="#states">¶</a></h1><p>LLMs calls are inherently stateless - they do not have memory of any previous interactions. Every call is an independent event, and <strong>YOU</strong> must manage any information that needs to be carried over time.</p>
-<p>In this notebook we will look at a few different things that we might want to keep track of between calls.</p>
+<h1 id="generating-a-summary">Generating a Summary<a class="anchor-link" href="#generating-a-summary">¶</a></h1>
 </div>
 </div>
 </div>
@@ -1218,21 +1300,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="conversation-history">Conversation History<a class="anchor-link" href="#conversation-history">¶</a></h2><p>Keeping track of the conversation history is actually easy. Firstly it is important to remember that LLMs often have the following pattern:</p>
-<pre><code>system prompt -&gt; user prompt -&gt; model response -&gt; user prompt -&gt; model response -&gt; etc.
-</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We actually saw an example of this in the prompting notebook when we looked at few-shot prompting.</p>
-<p>Here is a really simple example of how we can keep track of the conversation history.</p>
+<p>In the previous example, we explored how to keep track of the conversataion history and the tokens used.</p>
+<p>In this section, we will look at how to generate a summary of the conversation so far. We can then use this summary as context for a conversation.</p>
 </div>
 </div>
 </div>
@@ -1242,156 +1311,10 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-1">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">system_state</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">"conversation_history"</span><span class="p">:</span> <span class="p">[]</span>
-<span class="p">}</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-1">system_state = {
-    "conversation_history": []
-}</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-2">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">system_prompt</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="s2">"You are a helpful philosophical assistant. "</span>
-    <span class="s2">"You will help me think about philosophical questions. "</span>
-    <span class="s2">"Please keep your answers concise and to the point."</span>
-<span class="p">)</span>
-
-<span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">"role"</span><span class="p">:</span> <span class="s2">"system"</span><span class="p">,</span>
-    <span class="s2">"content"</span><span class="p">:</span> <span class="n">system_prompt</span>
-<span class="p">})</span>
-
-<span class="n">user_prompt</span> <span class="o">=</span> <span class="s2">"What is the meaning of life?"</span>
-
-<span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">"role"</span><span class="p">:</span> <span class="s2">"user"</span><span class="p">,</span>
-    <span class="s2">"content"</span><span class="p">:</span> <span class="n">user_prompt</span>
-<span class="p">})</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-2">system_prompt = (
-    "You are a helpful philosophical assistant. "
-    "You will help me think about philosophical questions. "
-    "Please keep your answers concise and to the point."
-)
-
-system_state["conversation_history"].append({
-    "role": "system",
-    "content": system_prompt
-})
-
-user_prompt = "What is the meaning of life?"
-
-system_state["conversation_history"].append({
-    "role": "user",
-    "content": user_prompt
-})</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-3">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">for</span> <span class="n">message</span> <span class="ow">in</span> <span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">message</span><span class="p">[</span><span class="s1">'role'</span><span class="p">]</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">message</span><span class="p">[</span><span class="s1">'content'</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-3">for message in system_state["conversation_history"]:
-    print(f"{message['role']}: {message['content']}\n")</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>system: You are a helpful philosophical assistant. You will help me think about philosophical questions. Please keep your answers concise and to the point.
-
-user: What is the meaning of life?
-
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Now we can use this conversation history to generate a response.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-4">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -1410,8 +1333,10 @@ user: What is the meaning of life?
 <span class="n">dotenv</span><span class="o">.</span><span class="n">load_dotenv</span><span class="p">()</span>
 
 <span class="n">OPENAI_API_KEY</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">"OPENAI_API_KEY"</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">rich.pretty</span> <span class="kn">import</span> <span class="n">pprint</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-4">from openai import OpenAI
+<div class="clipboard-copy-txt" id="cell-1">from openai import OpenAI
 client = OpenAI()
 
 import dotenv
@@ -1419,7 +1344,117 @@ import os
 
 dotenv.load_dotenv()
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")</div>
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+from rich.pretty import pprint</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="simple-summary">Simple summary<a class="anchor-link" href="#simple-summary">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>For this example, we will create a Jinja template.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<hr/>
+<pre><code>You are a helpful summariser, tracking information about a conversation in JSON format.
+Do not include an redundant information and do not hallucinate.
+Do not respond to the user, only update the summary.
+Keep the summary concise and to the point.
+You have just received a new message from the user ("input_message"), and the response from the assistant ("assistant_response").
+You will update the current summary ("current_summary") in JSON format according to the following schema:
+
+{{ schema }}
+
+### Current Summary ###
+
+{{ current_summary }}
+
+### User Message ###
+
+{{ input_message }}
+
+### Assistant Response ###
+
+{{ assistant_response }}
+
+### New Summary ###
+
+</code></pre>
+<hr/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>So we have three arguments: the schema, the current summary, and the new message. Notice that we are also using a schema for the summary, so we will also need to use a Pydantic model to define the schema.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [64]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-2">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">Field</span>
+
+<span class="k">class</span> <span class="nc">Summary</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="n">first_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="s2">"unknown"</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">"The first name of the user."</span><span class="p">)</span>
+    <span class="n">last_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="s2">"unknown"</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">"The last name of the user."</span><span class="p">)</span>
+    <span class="n">unresolved_questions</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">Field</span><span class="p">([],</span> <span class="n">description</span><span class="o">=</span><span class="s2">"A list of questions that the user has asked that the assistant has not yet resolved."</span><span class="p">)</span>
+    <span class="n">summary</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="s2">"unknown"</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">"The running summary of the conversation so far. Update with the previous assistant response and the new input from the user."</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-2">from pydantic import BaseModel, Field
+
+class Summary(BaseModel):
+    first_name: str = Field("unknown", description="The first name of the user.")
+    last_name: str = Field("unknown", description="The last name of the user.")
+    unresolved_questions: list[str] = Field([], description="A list of questions that the user has asked that the assistant has not yet resolved.")
+    summary: str = Field("unknown", description="The running summary of the conversation so far. Update with the previous assistant response and the new input from the user.")</div>
 </div>
 </div>
 </div>
@@ -1431,7 +1466,99 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [65]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-3">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">current_summary</span> <span class="o">=</span> <span class="n">Summary</span><span class="p">()</span>
+<span class="n">pprint</span><span class="p">(</span><span class="n">current_summary</span><span class="p">,</span> <span class="n">expand_all</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-3">current_summary = Summary()
+pprint(current_summary, expand_all=True)</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">Summary</span><span style="font-weight: bold">(</span>
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="color: #808000; text-decoration-color: #808000">first_name</span>=<span style="color: #008000; text-decoration-color: #008000">'unknown'</span>,
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="color: #808000; text-decoration-color: #808000">last_name</span>=<span style="color: #008000; text-decoration-color: #008000">'unknown'</span>,
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="color: #808000; text-decoration-color: #808000">unresolved_questions</span>=<span style="font-weight: bold">[]</span>,
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="color: #808000; text-decoration-color: #808000">summary</span>=<span style="color: #008000; text-decoration-color: #008000">'unknown'</span>
+<span style="font-weight: bold">)</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [66]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-4">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">jinja2</span> <span class="kn">import</span> <span class="n">Environment</span><span class="p">,</span> <span class="n">FileSystemLoader</span><span class="p">,</span> <span class="n">select_autoescape</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Any</span>
+
+<span class="k">def</span> <span class="nf">load_template</span><span class="p">(</span><span class="n">template_filepath</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">arguments</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="n">env</span> <span class="o">=</span> <span class="n">Environment</span><span class="p">(</span>
+        <span class="n">loader</span><span class="o">=</span><span class="n">FileSystemLoader</span><span class="p">(</span><span class="n">searchpath</span><span class="o">=</span><span class="s1">'./'</span><span class="p">),</span>
+        <span class="n">autoescape</span><span class="o">=</span><span class="n">select_autoescape</span><span class="p">()</span>
+    <span class="p">)</span>
+    <span class="n">template</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">get_template</span><span class="p">(</span><span class="n">template_filepath</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">template</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="o">**</span><span class="n">arguments</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-4">from jinja2 import Environment, FileSystemLoader, select_autoescape
+from typing import Any
+
+def load_template(template_filepath: str, arguments: dict[str, Any]) -&gt; str:
+    env = Environment(
+        loader=FileSystemLoader(searchpath='./'),
+        autoescape=select_autoescape()
+    )
+    template = env.get_template(template_filepath)
+    return template.render(**arguments)</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-5">
@@ -1444,20 +1571,431 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">summary_prompt</span> <span class="o">=</span> <span class="n">load_template</span><span class="p">(</span>
+    <span class="s2">"prompts/summary_system_prompt.jinja"</span><span class="p">,</span>
+    <span class="p">{</span>
+        <span class="s2">"schema"</span><span class="p">:</span> <span class="n">current_summary</span><span class="o">.</span><span class="n">model_json_schema</span><span class="p">(),</span>
+        <span class="s2">"current_summary"</span><span class="p">:</span> <span class="n">current_summary</span><span class="o">.</span><span class="n">model_dump</span><span class="p">(),</span>
+        <span class="s2">"input_message"</span><span class="p">:</span> <span class="s2">"Hello, nice to meet you!"</span><span class="p">,</span>
+        <span class="s2">"assistant_response"</span><span class="p">:</span> <span class="s2">"Nice to meet you too! What is your name?"</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-5">summary_prompt = load_template(
+    "prompts/summary_system_prompt.jinja",
+    {
+        "schema": current_summary.model_json_schema(),
+        "current_summary": current_summary.model_dump(),
+        "input_message": "Hello, nice to meet you!",
+        "assistant_response": "Nice to meet you too! What is your name?",
+    }
+)</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [68]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-6">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">summary_prompt</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-6">print(summary_prompt)</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>You are a helpful summariser, tracking information about a conversation in JSON format.
+Do not include an redundant information and do not hallucinate.
+Do not respond to the user, only update the summary.
+Keep the summary concise and to the point.
+You have just received a new message from the user ("input_message"), and the response from the assistant ("assistant_response").
+You will update the current summary ("current_summary") in JSON format according to the following schema:
+
+{'properties': {'first_name': {'default': 'unknown', 'description': 'The first name of the user.', 'title': 'First Name', 'type': 'string'}, 'last_name': {'default': 'unknown', 'description': 'The last name of the user.', 'title': 'Last Name', 'type': 'string'}, 'unresolved_questions': {'default': [], 'description': 'A list of questions that the user has asked that the assistant has not yet resolved.', 'items': {'type': 'string'}, 'title': 'Unresolved Questions', 'type': 'array'}, 'summary': {'default': 'unknown', 'description': 'The running summary of the conversation so far. Update with the previous assistant response and the new input from the user.', 'title': 'Summary', 'type': 'string'}}, 'title': 'Summary', 'type': 'object'}
+
+### Current Summary ###
+
+{'first_name': 'unknown', 'last_name': 'unknown', 'unresolved_questions': [], 'summary': 'unknown'}
+
+### User Message ###
+
+Hello, nice to meet you!
+
+### Assistant Response ###
+
+Nice to meet you too! What is your name?
+
+### New Summary ###
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [69]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-7">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+
+<span class="k">def</span> <span class="nf">generate_summary</span><span class="p">(</span><span class="n">input_message</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Summary</span><span class="p">:</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+        <span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4o-mini"</span><span class="p">,</span>
+        <span class="n">messages</span><span class="o">=</span><span class="p">[</span>
+            <span class="p">{</span><span class="s2">"role"</span><span class="p">:</span> <span class="s2">"user"</span><span class="p">,</span> <span class="s2">"content"</span><span class="p">:</span> <span class="n">summary_prompt</span><span class="p">}</span>
+        <span class="p">],</span>
+        <span class="n">response_format</span><span class="o">=</span><span class="p">{</span><span class="s2">"type"</span><span class="p">:</span> <span class="s2">"json_object"</span><span class="p">},</span>
+        <span class="n">temperature</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">json_content</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+    <span class="n">current_summary</span> <span class="o">=</span> <span class="n">Summary</span><span class="p">(</span><span class="o">**</span><span class="n">json_content</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">current_summary</span>
+
+<span class="n">current_summary</span> <span class="o">=</span> <span class="n">generate_summary</span><span class="p">(</span><span class="n">summary_prompt</span><span class="p">)</span>
+
+<span class="n">pprint</span><span class="p">(</span><span class="n">current_summary</span><span class="p">,</span> <span class="n">expand_all</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-7">import json
+
+def generate_summary(input_message: str) -&gt; Summary:
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            {"role": "user", "content": summary_prompt}
+        ],
+        response_format={"type": "json_object"},
+        temperature=0.0,
+    )
+
+    json_content = json.loads(response.choices[0].message.content)
+    current_summary = Summary(**json_content)
+    
+    return current_summary
+
+current_summary = generate_summary(summary_prompt)
+
+pprint(current_summary, expand_all=True)
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">Summary</span><span style="font-weight: bold">(</span>
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="color: #808000; text-decoration-color: #808000">first_name</span>=<span style="color: #008000; text-decoration-color: #008000">'unknown'</span>,
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="color: #808000; text-decoration-color: #808000">last_name</span>=<span style="color: #008000; text-decoration-color: #008000">'unknown'</span>,
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="color: #808000; text-decoration-color: #808000">unresolved_questions</span>=<span style="font-weight: bold">[</span>
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   │   </span><span style="color: #008000; text-decoration-color: #008000">'What is your name?'</span>
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="font-weight: bold">]</span>,
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="color: #808000; text-decoration-color: #808000">summary</span>=<span style="color: #008000; text-decoration-color: #008000">"User greeted the assistant. Assistant responded and asked for the user's name."</span>
+<span style="font-weight: bold">)</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We have set the temperature to 0.0, to avoid the model being too "creative".</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>How let's try another input.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [70]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-8">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">summary_prompt</span> <span class="o">=</span> <span class="n">load_template</span><span class="p">(</span>
+    <span class="s2">"prompts/summary_system_prompt.jinja"</span><span class="p">,</span>
+    <span class="p">{</span>
+        <span class="s2">"schema"</span><span class="p">:</span> <span class="n">current_summary</span><span class="o">.</span><span class="n">model_json_schema</span><span class="p">(),</span>
+        <span class="s2">"current_summary"</span><span class="p">:</span> <span class="n">current_summary</span><span class="o">.</span><span class="n">model_dump</span><span class="p">(),</span>
+        <span class="s2">"input_message"</span><span class="p">:</span> <span class="s2">"My name is Garfield Leopard. I am interested in learning about cats."</span><span class="p">,</span>
+        <span class="s2">"assistant_response"</span><span class="p">:</span> <span class="s2">"Nice to meet you Garfield! I am also interested in learning about cats. What are you interested in learning about cats?"</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+
+<span class="n">current_summary</span> <span class="o">=</span> <span class="n">generate_summary</span><span class="p">(</span><span class="n">summary_prompt</span><span class="p">)</span>
+
+<span class="n">pprint</span><span class="p">(</span><span class="n">current_summary</span><span class="p">,</span> <span class="n">expand_all</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-8">summary_prompt = load_template(
+    "prompts/summary_system_prompt.jinja",
+    {
+        "schema": current_summary.model_json_schema(),
+        "current_summary": current_summary.model_dump(),
+        "input_message": "My name is Garfield Leopard. I am interested in learning about cats.",
+        "assistant_response": "Nice to meet you Garfield! I am also interested in learning about cats. What are you interested in learning about cats?",
+    }
+)
+
+current_summary = generate_summary(summary_prompt)
+
+pprint(current_summary, expand_all=True)
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">Summary</span><span style="font-weight: bold">(</span>
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="color: #808000; text-decoration-color: #808000">first_name</span>=<span style="color: #008000; text-decoration-color: #008000">'Garfield'</span>,
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="color: #808000; text-decoration-color: #808000">last_name</span>=<span style="color: #008000; text-decoration-color: #008000">'Leopard'</span>,
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="color: #808000; text-decoration-color: #808000">unresolved_questions</span>=<span style="font-weight: bold">[</span>
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   │   </span><span style="color: #008000; text-decoration-color: #008000">'What are you interested in learning about cats?'</span>
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="font-weight: bold">]</span>,
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="color: #808000; text-decoration-color: #808000">summary</span>=<span style="color: #008000; text-decoration-color: #008000">'User introduced themselves as Garfield Leopard and expressed interest in learning about cats. Assistant acknowledged the introduction and asked what specific topics about cats the user is interested in.'</span>
+<span style="font-weight: bold">)</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>So now we have updated the summary with the messages so far. But there is still one thing missing: we are not actually talking to anything! We are manually updating the messages with fake chatbot responses.</p>
+<p>So now, let's add another model instance to this conversation...</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="adding-a-chatbot">Adding a chatbot<a class="anchor-link" href="#adding-a-chatbot">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>In this extension, we add a chatbot to the conversation. The prompt is as follows:</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<hr/>
+<pre><code>You are a helpful assistant. You will respond to the user's message ("input_message") with a helpful response.
+You will also be given a running summary ("running_summary") of the conversation so far in JSON format.
+You can use this summary to help you answer the user's question.
+
+### Running Summary ###
+
+{{ running_summary }}
+
+### User Message ###
+
+{{ input_message }}
+
+</code></pre>
+<hr/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Now we need to write logic to update the summary with the new messages. Let's walk through this step by step (because we know that this will make us perform better 😄). We need to:</p>
+<ol>
+<li>Get the user input</li>
+<li>Get the prompt template for the chatbot</li>
+<li>Feed this into the chatbot along with the running summary</li>
+<li>Update the running summary with the new response from the chatbot</li>
+</ol>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [76]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-9">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># 1. Get user input</span>
+<span class="n">user_input</span> <span class="o">=</span> <span class="s2">"I think I would like to learn about the noble jaguar. Can you tell me more about them?"</span>
+
+<span class="c1"># 2. Get the prompt template for the chatbot</span>
+<span class="n">chat_prompt</span> <span class="o">=</span> <span class="n">load_template</span><span class="p">(</span>
+    <span class="s2">"prompts/bot_prompt.jinja"</span><span class="p">,</span>
+    <span class="p">{</span>
+        <span class="s2">"running_summary"</span><span class="p">:</span> <span class="n">current_summary</span><span class="o">.</span><span class="n">model_dump</span><span class="p">(),</span>
+        <span class="s2">"input_message"</span><span class="p">:</span> <span class="n">user_input</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-9"># 1. Get user input
+user_input = "I think I would like to learn about the noble jaguar. Can you tell me more about them?"
+
+# 2. Get the prompt template for the chatbot
+chat_prompt = load_template(
+    "prompts/bot_prompt.jinja",
+    {
+        "running_summary": current_summary.model_dump(),
+        "input_message": user_input,
+    }
+)</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [77]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-10">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># 3. Feed this into the chatbot along with the running summary</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
     <span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4o-mini"</span><span class="p">,</span>
-    <span class="n">messages</span><span class="o">=</span><span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">],</span>
-    <span class="n">max_tokens</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span>
-    <span class="n">temperature</span><span class="o">=</span><span class="mf">1.0</span>
+    <span class="n">messages</span><span class="o">=</span><span class="p">[</span>
+        <span class="p">{</span><span class="s2">"role"</span><span class="p">:</span> <span class="s2">"user"</span><span class="p">,</span> <span class="s2">"content"</span><span class="p">:</span> <span class="n">chat_prompt</span><span class="p">}</span>
+    <span class="p">],</span>
+    <span class="n">temperature</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
 <span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-5">response = client.chat.completions.create(
+<div class="clipboard-copy-txt" id="cell-10"># 3. Feed this into the chatbot along with the running summary
+response = client.chat.completions.create(
     model="gpt-4o-mini",
-    messages=system_state["conversation_history"],
-    max_tokens=512,
-    temperature=1.0
+    messages=[
+        {"role": "user", "content": chat_prompt}
+    ],
+    temperature=0.7,
 )
 
 print(response.choices[0].message.content)</div>
@@ -1472,28 +2010,24 @@ print(response.choices[0].message.content)</div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>The meaning of life is a deeply personal and subjective question. Various philosophical, spiritual, and existential perspectives offer different answers: 
+<pre>Jaguars are fascinating and powerful big cats native to the Americas. Here are some key facts about them:
 
-1. **Existentialism** suggests that life has no inherent meaning, and individuals must create their own purpose.
-2. **Religious perspectives** often provide a framework where life's meaning is linked to a divine purpose or adherence to spiritual teachings.
-3. **Humanism** focuses on the meaning derived from human relationships, personal fulfillment, and contributing to the greater good.
-4. **Buddhism** emphasizes the pursuit of enlightenment and understanding the nature of suffering as key to a meaningful life.
+1. **Scientific Classification**: They belong to the species Panthera onca and are part of the Felidae family.
 
-Ultimately, the meaning of life may depend on one's values, beliefs, and experiences.
+2. **Habitat**: Jaguars are primarily found in rainforests, but they also inhabit savannas and grasslands. Their range extends from the southern United States to South America, particularly in the Amazon Basin.
+
+3. **Physical Characteristics**: Jaguars are known for their robust build and distinctive coat, which is usually a golden-yellow with black rosettes. They are the largest cats in the Americas and the third-largest in the world after tigers and lions.
+
+4. **Diet and Hunting**: Jaguars are carnivorous and have a varied diet that includes deer, capybaras, and even caimans. They are unique among big cats in that they often hunt by biting through the skull or shell of their prey.
+
+5. **Behavior**: They are solitary creatures and are excellent swimmers, often found near water. They are also known for their powerful jaws and stealthy hunting techniques.
+
+6. **Conservation Status**: Jaguars are currently listed as Near Threatened by the IUCN due to habitat loss and poaching. Conservation efforts are in place to protect their habitats and ensure their survival.
+
+If you have specific aspects of jaguars that you'd like to learn more about, feel free to ask!
 </pre>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Great, but now what happens if I want to ask a follow up question?</p>
 </div>
 </div>
 </div>
@@ -1503,10 +2037,10 @@ Ultimately, the meaning of life may depend on one's values, beliefs, and experie
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [78]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-6">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-11">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -1516,297 +2050,35 @@ Ultimately, the meaning of life may depend on one's values, beliefs, and experie
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">follow_up_prompt</span> <span class="o">=</span> <span class="s2">"Can you tell more about point 1?"</span>
-
-<span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
-    <span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4o-mini"</span><span class="p">,</span>
-    <span class="n">messages</span><span class="o">=</span><span class="p">[{</span>
-        <span class="s2">"role"</span><span class="p">:</span> <span class="s2">"user"</span><span class="p">,</span>
-        <span class="s2">"content"</span><span class="p">:</span> <span class="n">follow_up_prompt</span>
-    <span class="p">}],</span>
-    <span class="n">max_tokens</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span>
-    <span class="n">temperature</span><span class="o">=</span><span class="mf">1.0</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># 4. Update the running summary with the new response from the chatbot</span>
+<span class="n">summary_prompt</span> <span class="o">=</span> <span class="n">load_template</span><span class="p">(</span>
+    <span class="s2">"prompts/summary_system_prompt.jinja"</span><span class="p">,</span>
+    <span class="p">{</span>
+        <span class="s2">"schema"</span><span class="p">:</span> <span class="n">current_summary</span><span class="o">.</span><span class="n">model_json_schema</span><span class="p">(),</span>
+        <span class="s2">"current_summary"</span><span class="p">:</span> <span class="n">current_summary</span><span class="o">.</span><span class="n">model_dump</span><span class="p">(),</span>
+        <span class="s2">"input_message"</span><span class="p">:</span> <span class="n">user_input</span><span class="p">,</span>
+        <span class="s2">"assistant_response"</span><span class="p">:</span> <span class="n">response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="p">,</span>
+    <span class="p">}</span>
 <span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-6">follow_up_prompt = "Can you tell more about point 1?"
+<span class="n">current_summary</span> <span class="o">=</span> <span class="n">generate_summary</span><span class="p">(</span><span class="n">summary_prompt</span><span class="p">)</span>
 
-response = client.chat.completions.create(
-    model="gpt-4o-mini",
-    messages=[{
-        "role": "user",
-        "content": follow_up_prompt
-    }],
-    max_tokens=512,
-    temperature=1.0
+<span class="n">pprint</span><span class="p">(</span><span class="n">current_summary</span><span class="p">,</span> <span class="n">expand_all</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-11"># 4. Update the running summary with the new response from the chatbot
+summary_prompt = load_template(
+    "prompts/summary_system_prompt.jinja",
+    {
+        "schema": current_summary.model_json_schema(),
+        "current_summary": current_summary.model_dump(),
+        "input_message": user_input,
+        "assistant_response": response.choices[0].message.content,
+    }
 )
 
-print(response.choices[0].message.content)
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Of course! However, I need more context to provide a detailed response. Could you please specify what "point 1" you are referring to? This could relate to a list, an article, or a particular topic. Let me know so I can assist you better!
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Obviously it has no memory of the previous conversation. So we just need to append the follow up prompt to the conversation history.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-7">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
-    <span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4o-mini"</span><span class="p">,</span>
-    <span class="n">messages</span><span class="o">=</span><span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">],</span>
-    <span class="n">max_tokens</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span>
-    <span class="n">temperature</span><span class="o">=</span><span class="mf">1.0</span>
-<span class="p">)</span>
+current_summary = generate_summary(summary_prompt)
 
-<span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">"role"</span><span class="p">:</span> <span class="s2">"assistant"</span><span class="p">,</span>
-    <span class="s2">"content"</span><span class="p">:</span> <span class="n">response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span>
-<span class="p">})</span>
-
-<span class="k">for</span> <span class="n">message</span> <span class="ow">in</span> <span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">message</span><span class="p">[</span><span class="s1">'role'</span><span class="p">]</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">message</span><span class="p">[</span><span class="s1">'content'</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-7">response = client.chat.completions.create(
-    model="gpt-4o-mini",
-    messages=system_state["conversation_history"],
-    max_tokens=512,
-    temperature=1.0
-)
-
-system_state["conversation_history"].append({
-    "role": "assistant",
-    "content": response.choices[0].message.content
-})
-
-for message in system_state["conversation_history"]:
-    print(f"{message['role'].upper()}: {message['content']}\n")</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>SYSTEM: You are a helpful philosophical assistant. You will help me think about philosophical questions. Please keep your answers concise and to the point.
-
-USER: What is the meaning of life?
-
-ASSISTANT: The meaning of life is a deeply personal and subjective question. Some philosophical perspectives suggest it's about seeking happiness, fulfilling potential, or contributing to others. Existentialists argue it’s up to each individual to create their own meaning. Others find purpose in spiritual beliefs or connections with nature. Ultimately, it varies for each person based on their values, experiences, and beliefs.
-
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>And now we can keep the conversation going in a simple loop. If you run this cell a few times you will see that the conversation history is correctly maintained.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-8">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="n">user_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"You: "</span><span class="p">)</span>
-    
-    <span class="k">if</span> <span class="n">user_input</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'exit'</span><span class="p">,</span> <span class="s1">'quit'</span><span class="p">,</span> <span class="s1">'bye'</span><span class="p">]:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Assistant: Goodbye!"</span><span class="p">)</span>
-        <span class="k">break</span>
-    
-    <span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-        <span class="s2">"role"</span><span class="p">:</span> <span class="s2">"user"</span><span class="p">,</span>
-        <span class="s2">"content"</span><span class="p">:</span> <span class="n">user_input</span>
-    <span class="p">})</span>
-    
-    <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
-        <span class="n">model</span><span class="o">=</span><span class="s2">"gpt-4o-mini"</span><span class="p">,</span>
-        <span class="n">messages</span><span class="o">=</span><span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">],</span>
-        <span class="n">max_tokens</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span>
-        <span class="n">temperature</span><span class="o">=</span><span class="mf">1.0</span>
-    <span class="p">)</span>
-    
-    <span class="n">assistant_response</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Assistant: </span><span class="si">{</span><span class="n">assistant_response</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-    
-    <span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-        <span class="s2">"role"</span><span class="p">:</span> <span class="s2">"assistant"</span><span class="p">,</span>
-        <span class="s2">"content"</span><span class="p">:</span> <span class="n">assistant_response</span>
-    <span class="p">})</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-8">while True:
-    user_input = input("You: ")
-    
-    if user_input.lower() in ['exit', 'quit', 'bye']:
-        print("Assistant: Goodbye!")
-        break
-    
-    system_state["conversation_history"].append({
-        "role": "user",
-        "content": user_input
-    })
-    
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=system_state["conversation_history"],
-        max_tokens=512,
-        temperature=1.0
-    )
-    
-    assistant_response = response.choices[0].message.content
-    print(f"Assistant: {assistant_response}\n")
-    
-    system_state["conversation_history"].append({
-        "role": "assistant",
-        "content": assistant_response
-    })</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-9">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">rich.console</span> <span class="kn">import</span> <span class="n">Console</span>
-<span class="kn">from</span> <span class="nn">rich.text</span> <span class="kn">import</span> <span class="n">Text</span>
-
-<span class="n">console</span> <span class="o">=</span> <span class="n">Console</span><span class="p">()</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-9">from rich.console import Console
-from rich.text import Text
-
-console = Console()</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-10">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">colors</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">"system"</span><span class="p">:</span> <span class="s2">"green"</span><span class="p">,</span>
-    <span class="s2">"user"</span><span class="p">:</span> <span class="s2">"cyan"</span><span class="p">,</span>
-    <span class="s2">"assistant"</span><span class="p">:</span> <span class="s2">"magenta"</span>
-<span class="p">}</span>
-
-<span class="k">for</span> <span class="n">message</span> <span class="ow">in</span> <span class="n">system_state</span><span class="p">[</span><span class="s2">"conversation_history"</span><span class="p">]:</span>
-    <span class="n">role</span> <span class="o">=</span> <span class="n">message</span><span class="p">[</span><span class="s2">"role"</span><span class="p">]</span>
-    <span class="n">content</span> <span class="o">=</span> <span class="n">message</span><span class="p">[</span><span class="s2">"content"</span><span class="p">]</span>
-    <span class="n">color</span> <span class="o">=</span> <span class="n">colors</span><span class="p">[</span><span class="n">role</span><span class="p">]</span>
-    <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"[</span><span class="si">{</span><span class="n">color</span><span class="si">}</span><span class="s2">]</span><span class="si">{</span><span class="n">role</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">content</span><span class="si">}</span><span class="s2">[/</span><span class="si">{</span><span class="n">color</span><span class="si">}</span><span class="s2">]"</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-10">colors = {
-    "system": "green",
-    "user": "cyan",
-    "assistant": "magenta"
-}
-
-for message in system_state["conversation_history"]:
-    role = message["role"]
-    content = message["content"]
-    color = colors[role]
-    console.print(f"[{color}]{role.upper()}: {content}[/{color}]")</div>
+pprint(current_summary, expand_all=True)</div>
 </div>
 </div>
 </div>
@@ -1818,98 +2090,12 @@ for message in system_state["conversation_history"]:
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008000; text-decoration-color: #008000">SYSTEM: You are a helpful philosophical assistant. You will help me think about philosophical questions. Please </span>
-<span style="color: #008000; text-decoration-color: #008000">keep your answers concise and to the point.</span>
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080">USER: What is the meaning of life?</span>
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #800080; text-decoration-color: #800080">ASSISTANT: The meaning of life is a deeply personal and subjective question. Some philosophical perspectives </span>
-<span style="color: #800080; text-decoration-color: #800080">suggest it's about seeking happiness, fulfilling potential, or contributing to others. Existentialists argue it’s </span>
-<span style="color: #800080; text-decoration-color: #800080">up to each individual to create their own meaning. Others find purpose in spiritual beliefs or connections with </span>
-<span style="color: #800080; text-decoration-color: #800080">nature. Ultimately, it varies for each person based on their values, experiences, and beliefs.</span>
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080">USER: Can you tell me more about point </span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span><span style="color: #008080; text-decoration-color: #008080">?</span>
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #800080; text-decoration-color: #800080">ASSISTANT: Certainly! The idea of seeking happiness as the meaning of life is central to various philosophical </span>
-<span style="color: #800080; text-decoration-color: #800080">traditions, particularly hedonism and utilitarianism. Here are some key points:</span>
-
-<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">1</span><span style="color: #800080; text-decoration-color: #800080">. **Hedonism**: This school of thought posits that pleasure and the avoidance of pain are the highest goods. </span>
-<span style="color: #800080; text-decoration-color: #800080">According to hedonists, a fulfilling life is one that maximizes pleasure and minimizes suffering.</span>
-
-<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">2</span><span style="color: #800080; text-decoration-color: #800080">. **Utilitarianism**: Proposed by philosophers like Jeremy Bentham and John Stuart Mill, utilitarianism expands on</span>
-<span style="color: #800080; text-decoration-color: #800080">hedonism by suggesting that the right action is the one that produces the greatest overall happiness for the </span>
-<span style="color: #800080; text-decoration-color: #800080">greatest number of people. It emphasizes collective well-being.</span>
-
-<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">3</span><span style="color: #800080; text-decoration-color: #800080">. **Eudaimonia**: In Aristotelian ethics, eudaimonia is often translated as </span><span style="color: #800080; text-decoration-color: #800080">"flourishing"</span><span style="color: #800080; text-decoration-color: #800080"> or </span><span style="color: #800080; text-decoration-color: #800080">"well-being."</span><span style="color: #800080; text-decoration-color: #800080"> </span>
-<span style="color: #800080; text-decoration-color: #800080">Aristotle argues that a meaningful life involves fulfilling one's potential through virtuous actions, intellectual </span>
-<span style="color: #800080; text-decoration-color: #800080">growth, and community engagement.</span>
-
-<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">4</span><span style="color: #800080; text-decoration-color: #800080">. **Positive Psychology**: This modern psychological approach studies well-being and happiness, emphasizing </span>
-<span style="color: #800080; text-decoration-color: #800080">factors like relationships, purpose, and personal strengths as keys to a meaningful life.</span>
-
-<span style="color: #800080; text-decoration-color: #800080">Overall, pursuing happiness as a guiding principle encourages individuals to reflect on their desires, values, and </span>
-<span style="color: #800080; text-decoration-color: #800080">the impacts of their actions on themselves and others.</span>
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080">USER: That second one sounds interesting. Tell me more about those two people.</span>
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #800080; text-decoration-color: #800080">ASSISTANT: Certainly! Here’s a brief overview of Jeremy Bentham and John Stuart Mill, two key figures in </span>
-<span style="color: #800080; text-decoration-color: #800080">utilitarianism:</span>
-
-<span style="color: #800080; text-decoration-color: #800080">### Jeremy Bentham </span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">(</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">1748</span><span style="color: #800080; text-decoration-color: #800080">–</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">1832</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">)</span>
-<span style="color: #800080; text-decoration-color: #800080">- **Founder of Utilitarianism**: Bentham is often considered the father of utilitarianism. He introduced the idea </span>
-<span style="color: #800080; text-decoration-color: #800080">that the moral worth of an action is determined by its contribution to overall happiness or pleasure.</span>
-<span style="color: #800080; text-decoration-color: #800080">- **Principle of Utility**: He formulated the </span><span style="color: #800080; text-decoration-color: #800080">"greatest happiness principle,"</span><span style="color: #800080; text-decoration-color: #800080"> stating that the best action is the </span>
-<span style="color: #800080; text-decoration-color: #800080">one that produces the most happiness for the greatest number of people.</span>
-<span style="color: #800080; text-decoration-color: #800080">- **Hedonic Calculus**: Bentham proposed a method to evaluate the moral rightness of actions based on their </span>
-<span style="color: #800080; text-decoration-color: #800080">consequences, which he termed the </span><span style="color: #800080; text-decoration-color: #800080">"hedonic calculus."</span><span style="color: #800080; text-decoration-color: #800080"> This involves measuring factors like intensity, duration, </span>
-<span style="color: #800080; text-decoration-color: #800080">certainty, and proximity of pleasure or pain.</span>
-<span style="color: #800080; text-decoration-color: #800080">- **Reformist Ideas**: Bentham was also an advocate for social reforms, including legal changes to improve justice,</span>
-<span style="color: #800080; text-decoration-color: #800080">education, and animal rights.</span>
-
-<span style="color: #800080; text-decoration-color: #800080">### John Stuart Mill </span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">(</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">1806</span><span style="color: #800080; text-decoration-color: #800080">–</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">1873</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">)</span>
-<span style="color: #800080; text-decoration-color: #800080">- **Advancement of Utilitarianism**: Mill expanded on Bentham's ideas, refining the concept of utility and </span>
-<span style="color: #800080; text-decoration-color: #800080">addressing some of its criticisms.</span>
-<span style="color: #800080; text-decoration-color: #800080">- **Qualitative Distinction**: Mill argued that not all pleasures are equal; he distinguished between higher </span>
-<span style="color: #800080; text-decoration-color: #800080; font-weight: bold">(</span><span style="color: #800080; text-decoration-color: #800080">intellectual and moral</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">)</span><span style="color: #800080; text-decoration-color: #800080"> and lower </span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">(</span><span style="color: #800080; text-decoration-color: #800080">bodily</span><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">)</span><span style="color: #800080; text-decoration-color: #800080"> pleasures. He believed higher pleasures lead to more profound happiness</span>
-<span style="color: #800080; text-decoration-color: #800080">and should be prioritized.</span>
-<span style="color: #800080; text-decoration-color: #800080">- **Liberty and Individual Rights**: In his famous work </span><span style="color: #800080; text-decoration-color: #800080">"On Liberty,"</span><span style="color: #800080; text-decoration-color: #800080"> Mill emphasized the importance of personal </span>
-<span style="color: #800080; text-decoration-color: #800080">freedom and autonomy, asserting that individuals should have the right to pursue their own happiness, provided it </span>
-<span style="color: #800080; text-decoration-color: #800080">does not harm others.</span>
-<span style="color: #800080; text-decoration-color: #800080">- **Feminism and Social Issues**: Mill was also an early advocate for women's rights, notably in his work </span><span style="color: #800080; text-decoration-color: #800080">"The </span>
-<span style="color: #800080; text-decoration-color: #800080">Subjection of Women,"</span><span style="color: #800080; text-decoration-color: #800080"> arguing for equality and the importance of women's contributions to society.</span>
-
-<span style="color: #800080; text-decoration-color: #800080">Both Bentham and Mill have had a lasting influence on ethics, politics, and social reform, shaping discussions </span>
-<span style="color: #800080; text-decoration-color: #800080">around moral philosophy and the pursuit of happiness.</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #800080; text-decoration-color: #800080; font-weight: bold">Summary</span><span style="font-weight: bold">(</span>
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="color: #808000; text-decoration-color: #808000">first_name</span>=<span style="color: #008000; text-decoration-color: #008000">'Garfield'</span>,
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="color: #808000; text-decoration-color: #808000">last_name</span>=<span style="color: #008000; text-decoration-color: #008000">'Leopard'</span>,
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="color: #808000; text-decoration-color: #808000">unresolved_questions</span>=<span style="font-weight: bold">[]</span>,
+<span style="color: #7fbf7f; text-decoration-color: #7fbf7f">│   </span><span style="color: #808000; text-decoration-color: #808000">summary</span>=<span style="color: #008000; text-decoration-color: #008000">'User expressed interest in learning about the noble jaguar. Assistant provided key facts about jaguars, including their classification, habitat, physical characteristics, diet, behavior, and conservation status.'</span>
+<span style="font-weight: bold">)</span>
 </pre>
 </div>
 </div>
@@ -1923,18 +2109,8 @@ for message in system_state["conversation_history"]:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="tracking-tokens">Tracking tokens<a class="anchor-link" href="#tracking-tokens">¶</a></h2><p>We should probably also track the tokens that we are using so we can track costs. We can then start to cut off conversation history when we get too close to our limit.</p>
-<p>Coming soon...</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>So now we have a running summary of the conversation so far. Now out model is keeping track of the important information in the conversation without us having to feed in the full conversation history each time, which could cost a lot of money. In reality, we might to combine these approaches to get the best of both worlds.</p>
+<p>We can also add additional information to our <code>Summary</code> object to keep track of additional information.</p>
 </div>
 </div>
 </div>
@@ -1983,7 +2159,7 @@ for message in system_state["conversation_history"]:
               
                 
               
-              Thanks for your feedback! Help us improve this page by using our <a href="https://github.com/acceleratescience/large-language-models/issues/new/?title=[Feedback]+States+-+/6_states/" target="_blank" rel="noopener">feedback form</a>.
+              Thanks for your feedback! Help us improve this page by using our <a href="https://github.com/acceleratescience/large-language-models/issues/new/?title=[Feedback]+Generating%20a%20Summary+-+/states/7_summary/" target="_blank" rel="noopener">feedback form</a>.
             </div>
           
             <div data-md-value="0" hidden>
@@ -1991,7 +2167,7 @@ for message in system_state["conversation_history"]:
               
                 
               
-              Thanks for your feedback! Help us improve this page by using our <a href="https://github.com/acceleratescience/large-language-models/issues/new/?title=[Feedback]+States+-+/6_states/" target="_blank" rel="noopener">feedback form</a>.
+              Thanks for your feedback! Help us improve this page by using our <a href="https://github.com/acceleratescience/large-language-models/issues/new/?title=[Feedback]+Generating%20a%20Summary+-+/states/7_summary/" target="_blank" rel="noopener">feedback form</a>.
             </div>
           
         </div>
@@ -2023,7 +2199,7 @@ for message in system_state["conversation_history"]:
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../5_pydantic/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Pydantic">
+          <a href="../6_states/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Keeping track of information">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2033,7 +2209,7 @@ for message in system_state["conversation_history"]:
                 Previous
               </span>
               <div class="md-ellipsis">
-                Pydantic
+                Keeping track of information
               </div>
             </div>
           </a>
@@ -2147,10 +2323,10 @@ for message in system_state["conversation_history"]:
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["toc.integrate", "search.suggest", "search.highlight", "announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.integrate", "search.suggest", "search.highlight", "announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
       
     
   </body>

@@ -17,10 +17,6 @@
          <lastmod>2024-09-18</lastmod>
     </url>
     <url>
-         <loc>https://docs.science.ai.cam.ac.uk/large-language-models/6_states/</loc>
-         <lastmod>2024-09-18</lastmod>
-    </url>
-    <url>
          <loc>https://docs.science.ai.cam.ac.uk/large-language-models/notebook_example/</loc>
          <lastmod>2024-09-18</lastmod>
     </url>
@@ -42,6 +38,14 @@
     </url>
     <url>
          <loc>https://docs.science.ai.cam.ac.uk/large-language-models/prompting/4_prompt_templates/</loc>
+         <lastmod>2024-09-18</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.science.ai.cam.ac.uk/large-language-models/states/6_states/</loc>
+         <lastmod>2024-09-18</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.science.ai.cam.ac.uk/large-language-models/states/7_summary/</loc>
          <lastmod>2024-09-18</lastmod>
     </url>
 </urlset>
